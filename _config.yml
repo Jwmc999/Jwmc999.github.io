@@ -22,8 +22,3 @@ author:
  web: https://Jwmc999.github.io
  linkedin: https://linkedin.com/in/mervyn-chung/
  description: "Student"
- 
-$ git clone https://github.com/pages-themes/hacker
-$ cd jekyll-theme-hacker
-$ script/bootstrap
-$ bundle exec jekyll serve
