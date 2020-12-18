@@ -1,5 +1,5 @@
 # Blog Post
-## My first Blog Post
-* Post1
-* Post2
-* Post3
+## Journey Codes
+* Data Structure (DS)
+* C Language (C)
+* Discrete Mathematics (M)
