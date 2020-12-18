@@ -1,5 +1,13 @@
-title: Hacker theme
-description: Hacker is a theme for GitHub Pages.
+# Site
+title: Data Journey
+description: 
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-hacker
+## Introduction
+* Prologue
+### Journey Codes
+* Stage 0. Pack Up!
+* Data Structure (DS)
+* C Language
+* Discrete Mathematics (M)
