@@ -1,7 +1,7 @@
-$ git clone https://github.com/pages-themes/hacker
-$ cd jekyll-theme-hacker
-$ script/bootstrap
-$ bundle exec jekyll serve
+git clone https://github.com/pages-themes/hacker
+cd jekyll-theme-hacker
+script/bootstrap
+bundle exec jekyll serve
 
 # Data Journey
 
