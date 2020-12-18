@@ -1,6 +1,6 @@
 # Site
 title: Data Journey
-description: 
+description: Blog on C S
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-hacker
@@ -9,5 +9,21 @@ theme: jekyll-theme-hacker
 ### Journey Codes
 * Stage 0. Pack Up!
 * Data Structure (DS)
-* C Language
+* C Language (C)
 * Discrete Mathematics (M)
+* Extra Curriculum (Ex)
+
+# Author
+author:
+ sal: Jaewon Mervyn Chung
+ display_name: MERVYN
+ gravatar: 
+ email: rskessy@gmail.com
+ web: https://Jwmc999.github.io
+ linkedin: https://linkedin.com/in/mervyn-chung/
+ description: "Student"
+ 
+$ git clone https://github.com/pages-themes/hacker
+$ cd jekyll-theme-hacker
+$ script/bootstrap
+$ bundle exec jekyll serve
