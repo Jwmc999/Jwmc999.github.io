@@ -1,7 +1,8 @@
+```yml
 git clone https://github.com/pages-themes/hacker
 cd jekyll-theme-hacker
 script/bootstrap
-bundle exec jekyll serve
+bundle exec jekyll serve```
 
 # Data Journey
 
