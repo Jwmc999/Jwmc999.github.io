@@ -1,6 +1,6 @@
 # Blog Post
 * [Prologue](*/n)
 ## Journey Codes
-* [Data Structure (DS)]
-* [C Language (C)]
-* [Discrete Mathematics (M)]
+* [Data Structure (DS)] (*/n)
+* [C Language (C)] (*/n)
+* [Discrete Mathematics (M)] (*/n)
