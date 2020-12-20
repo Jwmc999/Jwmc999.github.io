@@ -15,8 +15,8 @@ title: "Lecture 01 Note"
 
 **Summary**
 - Definitions and examples of 
-** Data structures
-** Algorithms
+-- Data structures
+-- Algorithms
 
 # **Data Structures**
 ## Data Structure is a collection of 
@@ -38,10 +38,10 @@ Lists: "Stacks, Queues"
 - An algorithm is a sequence of computational steps that transform the input into the output.
 - An instance of a problem consists of the input needed ot compute a solution to the problem.
 - A correct algorithm:
-* for every input instances, halts with the correct output
+-- for every input instances, halts with the correct output
 ## Sorting Problem
 - A sorting algorithm
-* Input: A sequence of _n_ numbers <_a1, a2,..., an_>
-* Output: A permutation (reordering) of the input sequence,
+-- Input: A sequence of _n_ numbers <_a1, a2,..., an_>
+-- Output: A permutation (reordering) of the input sequence,
 <_b1, b2,..., bn_>, such that _b1=<b2=<...=<bn_
-* Instance: <7, 10, 4, 5, 2>
+-- Instance: <7, 10, 4, 5, 2>
