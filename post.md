@@ -1,6 +1,6 @@
 # Blog Post
-* Prologue
+[* Prologue]
 ## Journey Codes
-* Data Structure (DS)
-* C Language (C)
-* Discrete Mathematics (M)
+[* Data Structure (DS)]
+[* C Language (C)]
+[* Discrete Mathematics (M)]
