@@ -20,7 +20,7 @@ Lists: "Stacks, Queues"
 - An algorithm is a sequence of computational steps that transform the input into the output.
 - An instance of a problem consists of the input needed ot compute a solution to the problem.
 - A correct algorithm:
--- for every input instances, halts with the correct output
+* for every input instances, halts with the correct output
 ## Sorting Problem
 - A sorting algorithm
--- Input: A sequence of n numbers <>
+* Input: A sequence of  numbers <>
