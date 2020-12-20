@@ -1,3 +1,7 @@
+---
+layout: post
+title: "Lecture 01 Note"
+---
 # **Data Structures**
 ## Data Structure is a collection of 
 - Data values
@@ -6,14 +10,13 @@
 ## Abstraction
 - Process of removing details while preserving information relvant to solving the problem
 ## Fundamental data structures
----
-layout: table
+
 Primitive: "Interger, Float, Character"
 Non-Primitive: "Linear, Non-Linear, Files"
 Linear: "Arrays, Lists"
 Non-Linear: "Trees, Graphs"
 Lists: "Stacks, Queues"
----
+
 
 - Appropriate data structure should be chosen according to the data characteristics
 ## Algorithm
@@ -23,4 +26,6 @@ Lists: "Stacks, Queues"
 * for every input instances, halts with the correct output
 ## Sorting Problem
 - A sorting algorithm
-* Input: A sequence of  numbers <>
+* Input: A sequence of _n_ numbers <_a1, a2,..., an_>
+* Output: A permutation (reordering) of the input sequence,
+<_b1, b2,..., bn_>, such that _b1=<b2=<...=<bn_
