@@ -7,14 +7,14 @@
 - Process of removing details while preserving information relvant to solving the problem
 ## Fundamental data structures
 ---
-
+layout: table
 Primitive: "Interger, Float, Character"
 Non-Primitive: "Linear, Non-Linear, Files"
 Linear: "Arrays, Lists"
 Non-Linear: "Trees, Graphs"
 Lists: "Stacks, Queues"
-
 ---
+
 - Appropriate data structure should be chosen according to the data characteristics
 ## Algorithm
 - An algorithm is a sequence of computational steps that transform the input into the output.
