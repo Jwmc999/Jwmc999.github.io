@@ -13,6 +13,11 @@ title: "Lecture 01 Note"
 * Solution execution and evaluation (analysis)
 "How to think like a computer scientist"
 
+**Summary**
+- Definitions and examples of 
+** Data structures
+** Algorithms
+
 # **Data Structures**
 ## Data Structure is a collection of 
 - Data values
