@@ -1,5 +1,5 @@
 # Blog Post
-* [Prologue]
+* [Prologue](*/n)
 ## Journey Codes
 * [Data Structure (DS)]
 * [C Language (C)]
