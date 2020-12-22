@@ -3,7 +3,7 @@ layout: post
 title: Lecture2_Summary02
 ---
 # Stack
-## A collection of elements that are inserted and removed according to the **last-in first-out (LIFO)** orders
+## A collection of elements that are inserted and removed according to the 'last-in first-out (LIFO)' orders
 - The lastly inserted element will be removed firstly.
 - Insertion and removal are only available at the **top** of stack.
 # Stack: Terminologies
@@ -26,7 +26,7 @@ title: Lecture2_Summary02
 ## Example: ((()()))
 
 # Queue
-## A collection of elements that are inserted and removed according to the **first-in first-out (FIFO)** orders.
+## A collection of elements that are inserted and removed according to the 'first-in first-out (FIFO)' orders.
 - The firstly inserted element will be firstly removed.
 - All insertions are made at the position called rear (back, tail).
 - All deletions are made at the position called front (head).
