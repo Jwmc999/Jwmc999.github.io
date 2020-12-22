@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lecture2_Summary O1
+title: Lecture2_Summary 01
 ---
 # Array
 ## A data structure consisting of a collection of _**values**_
@@ -50,9 +50,14 @@ for(int row = 0; row<6; row++)
 {
   for(int col = 0; col <6; col++)
   {
-  
-  
-  
+    if(row<col)
+      matrix[row][col] = 1;
+    else if(row==col)
+      matrix[row][col] = 0;
+    else
+      matrix[row][col] = -1;
   }
 }
 ```
+# Pointer
+## A variable storing a _**mermory address**_
