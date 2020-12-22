@@ -7,9 +7,9 @@ title: Lecture2_Summary02
 - The lastly inserted element will be removed firstly.
 - Insertion and removal are only available at the **top** of stack.
 # Stack: Terminologies
-## Top: the top of a stack
-## Push: Insert an item on the top of stack
-## Pop: Remove the item on the top of stack
+- Top: the top of a stack
+- Push: Insert an item on the top of stack
+- Pop: Remove the item on the top of stack
 # Parenthesis Matching
 ## Problem
 - Check if each opening parenthesis has a corresponding closing one. 
@@ -31,10 +31,10 @@ title: Lecture2_Summary02
 - All insertions are made at the position called rear (back, tail).
 - All deletions are made at the position called front (head).
 # Queue: Terminologies
-## Front (head): the front of queue where deletions occur. 
-## Rear (back, tail): the rear of queue where insertions occur. 
-## Enqueue: insert an item at the rear.
-## Dequeue: delete the item at the front.
+- Front (head): the front of queue where deletions occur. 
+- Rear (back, tail): the rear of queue where insertions occur. 
+- Enqueue: insert an item at the rear.
+- Dequeue: delete the item at the front.
 # Linear Queue
 Problem: We cannot add anymore although we have empty spaces.
 # Circular Queue
