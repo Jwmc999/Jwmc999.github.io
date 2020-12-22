@@ -3,8 +3,8 @@ layout: post
 title: Lecture2_Summary 01
 ---
 # Array
-## A data structure consisting of a collection of _**values**_
-## Each identified by array _**index**_
+## A data structure consisting of a collection of _values_
+## Each identified by array _index_
 - In C/C++/Java programming languages, array index begins from 0.
   The range of array index is [0, size -1].
 ```c
@@ -29,14 +29,21 @@ delete [] d;
 ```
 # Creation of Arrays in C++ Programming Language
 ## 1-dimmensional array
-- int arr[10];
-- int *arr = new int[10];
+```c
+int arr[10];
+```
+```c
+int* arr = new int[10];
+```
 ## 2-dimensional array
-- int a[3][4];
-- int **a = new int *[3];
+```c
+int a[3][4];
+```
+```c
+int** a = new int* [3];
   for(int i=0;i<3;i++)
       a[i] = new int[4];
-
+```
 # Array in Memory
 ```c
 int score[3] = {52, 17, 61};
@@ -44,6 +51,8 @@ int score[3] = {52, 17, 61};
 ```
 # Example
 ```c
+#include <cstdio>
+
 int matrix[6][6];
 
 for(int row = 0; row<6; row++)
@@ -60,4 +69,146 @@ for(int row = 0; row<6; row++)
 }
 ```
 # Pointer
-## A variable storing a _**mermory address**_
+## A variable storing a _mermory address_
+- Represent the variable with 3 axes: name, value, address of memory
+```c
+int n = 3; //If you put *, it becomes the pointer data type. 
+int* pn = &n; //pointer called pn. Initialize the variable pn with the address of n.
+// the value of pn becomes the address of n
+// *pn is an integer
+```
+# & (Ampersand) Operator
+## Reference operator
+- Returns the address of a variable.
+```c
+#include <cstdio>
+
+int main()
+{
+  char c = 'A';
+  char* pc = &c;// pointer pc points the location of 
+  
+  printf("%c %p\n", c, pc);
+  printf("%p %p\n", &c, &pc);
+  printf("%d %d\n", sizeof(c), sizeof(pc));//size of character, size of pointer
+  
+  return 0;
+}
+```
+# * (Asterisk) Operator
+## Deference operator
+- Returns the value at the pointer address.
+- In other words, if you put * to the pointer, you can access the value of the variable that the pointer is pointing.
+```c
+#include <cstdio>
+
+int main()
+{
+  char c = 'A';
+  char* pc = &c;// a pointer pc is pointing to a variable c
+  //If you put * to the pointer pc, it (*pc) prints the value of variable c.
+  
+  printf("%c %c\n", c *pc);// A A
+  
+  *pc = 'C';// If you declare 'C' to the *pc,
+  //You can change the value of variable c 
+  //directly through the pointer (pc) that is pointing to the variable c
+  printf("%c %c\n", c, *pc);// C C
+  
+  return 0;
+}
+```
+answer: 
+A A 
+C C
+# Example
+## What are the results?
+```c
+#include <cstdio>
+
+int main()
+{
+  int a, b, c;
+  int* pa = &a, *pb = &b, *pc = &c;
+  
+  *pa = 10, *pb = 20;
+  *pc = *pa + *pb;
+  
+  printf("%d %d %d", a, b, c);
+  
+  return 0;
+}
+```
+answer: 10 20 30
+
+# Function Call with Pointers
+## Two types of passing augments to a function:
+- Call by value: passing values. Cannot change the value.
+- Call by reference: passing addresses (pointers). Can change the value of the variable. 
+ ```c
+ #include <cstdio>
+ 
+ void swap1(int x, int y);//Call by value
+ void swap2(int* px, int* py);//Call by reference
+ 
+ int main()
+ {
+  int a = 5, b = 7;
+  swap1(a, b);// swap1 cannot change the value of a and b in the main function.
+  printf("%d %d\n", a, b);// 5 7
+  swap2(&a, &b);// *px == a, *py == b. Change the addresses of a and b.
+  // swap2 can change the value of a and b. a == *py, b == *px.
+  printf("%d %d\n", a, b);// 7 5
+  return 0;
+ }
+```
+```c
+void swap1(int x, int y)
+{
+  int temp = x;
+  x = y;
+  y = temp;
+}
+```
+```c
+void swap2(int* px, int* py)
+{
+  int temp = *px;
+  *px = *py;
+  *py = temp;
+}
+```
+
+# Insertion and Deletion in Arrays
+- Insertion and deletion can require significant number of operations in arrays.
+# Linked Lists
+- A linear collection of data elements
+- Order is not given by their physical placement in memory.
+- Each element points to the next.
+- Each node consists of an **item** and a **link** (hook)
+# Inserting & Deleting an Element into a Linked List
+- Works
+# Linked List Implementation
+## A node consists of an item and a next pointer
+## A linked list has its length and a pointer to the head node.
+```c
+typedef int Data;
+
+typedef struct _Node
+{
+  Data item;
+  struct _Node* next;
+} Node;
+
+typedef struct
+{
+  Node* head;
+  int len;
+} LinkedList;
+```
+
+# Arrow and Box Representation
+## Box: an item
+## Arrow: a pointer to the next box
+- If the arrow points nothing, it is called the NULL pointer.
+## The head points the fist node.
