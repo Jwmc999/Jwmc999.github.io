@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lecture 01 Note"
+title: "Data Structure/Algorithm_01"
 ---
 **Course Objectives**
 - Discuss key data structures and algorithms essential for solving problems with computers
