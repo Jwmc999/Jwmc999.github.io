@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Non-Linear Data Structure 01"
+use_math: true
+comments: true
 ---
 # Tree
 ## A collection of nodes to represent a hierarchical relationship
@@ -28,7 +30,7 @@ title: "Non-Linear Data Structure 01"
 - They are different if order is relevant: ordered trees
 ## Paths
 ![paths](/path.png)
-- A path is a sequence of nodes ($a_{0}$, a_{2}, ... , a_{n}), where a_{k+1} is a child of a_{k}.
+- A path is a sequence of nodes ($$a_{0}$$, $$a_{2}$$, ... , $$a_{n}$$), where $$a_{k+1}$$ is a child of $$a_{k}$$.
   - The length of this path is _n_
   - The path (B, E, G) has length 2
 ## Depth
@@ -48,4 +50,4 @@ title: "Non-Linear Data Structure 01"
   - _a_ is an ancestor of _b_
   - _b_ is a descendent of _a_
 - Thus, a node is both an ancestor and a descendent of itself
-  - We can add the adjective strict to exclude equality: _a_ is a strict descendent of _b_ if _a_ is a descendent of _b_ but _a_ \ne _b_
+  - We can add the adjective strict to exclude equality: _a_ is a strict descendent of _b_ if _a_ is a descendent of _b_ but _a_ $$\neq$$ _b_
