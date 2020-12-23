@@ -11,7 +11,7 @@ title: "Data Structure/Algorithm_01"
   - Problem formulation (abstraction)
   - Solution expression (automation)
   - Solution execution and evaluation (analysis)
-"How to think like a computer scientist"
+- "How to think like a computer scientist"
 
 **Summary**
 - Definitions and examples of 
