@@ -10,7 +10,7 @@ comments: true
 - There is a first node, or root
 - Each node has variable number of successors (children)
 - Each node (other than the root) has exactly one node (parent) pointing to it.
-## Trees: Example
+### Example
 - Directory structures
 # Trees
 ![trees](/tree.png)
