@@ -42,11 +42,10 @@ Algorithms
 ## Algorithm
 - An algorithm is a sequence of computational steps that transform the input into the output.
 - An instance of a problem consists of the input needed ot compute a solution to the problem.
-A correct algorithm:
-for every input instances, halts with the correct output
+  - A correct algorithm:
+  - for every input instances, halts with the correct output
 ## Sorting Problem
 - A sorting algorithm
-Input: A sequence of _n_ numbers <_a1, a2,..., an_>
-Output: A permutation (reordering) of the input sequence,
-<_b1, b2,..., bn_>, such that _b1=<b2=<...=<bn_
-Instance: <7, 10, 4, 5, 2>
+  - Input: A sequence of _n_ numbers <_a1, a2,..., an_>
+  - Output: A permutation (reordering) of the input sequence, <_b1, b2,..., bn_>, such that _b1=<b2=<...=<bn_
+  - Instance: <7, 10, 4, 5, 2>
