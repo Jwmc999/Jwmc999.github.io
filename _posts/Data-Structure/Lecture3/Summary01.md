@@ -1,5 +1,5 @@
 ---
 layout: post
-title: Lecture3_Summary01_Non-Linear Data Structure
+title: Non-Linear Data Structure 01
 ---
 # Tree
