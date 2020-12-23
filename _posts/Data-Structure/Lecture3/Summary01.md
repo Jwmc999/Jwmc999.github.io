@@ -28,7 +28,7 @@ title: "Non-Linear Data Structure 01"
 - They are different if order is relevant: ordered trees
 ## Paths
 ![paths](/path.png)
-- A path is a sequence of nodes (a_{0}, a_{2}, ... , a_{n}), where a_{k+1} is a child of a_{k}.
+- A path is a sequence of nodes ($a_{0}$, a_{2}, ... , a_{n}), where a_{k+1} is a child of a_{k}.
   - The length of this path is _n_
   - The path (B, E, G) has length 2
 ## Depth
