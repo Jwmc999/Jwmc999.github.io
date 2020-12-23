@@ -2,21 +2,21 @@
 layout: post
 title: "Data Structure/Algorithm_01"
 ---
-# Course Objectives
+**Course Objectives** 
 - Discuss key data structures and algorithms essential for solving problems with computers
-+ (Powerful) Programming skills
- - Translate your idea into languages that computers can understand
- - Live coding session!
-+ Computational thinking
- - Problem formulation (abstraction)
- - Solution expression (automation)
- - Solution execution and evaluation (analysis)
+- (Powerful) Programming skills
+Translate your idea into languages that computers can understand
+Live coding session!
+- Computational thinking
+Problem formulation (abstraction)
+Solution expression (automation)
+Solution execution and evaluation (analysis)
 "How to think like a computer scientist"
 
 **Summary**
-+ Definitions and examples of 
- - Data structures
- - Algorithms
+- Definitions and examples of 
+Data structures
+Algorithms
 
 # Data Structures
 ## Data Structure is a collection of 
@@ -41,12 +41,12 @@ title: "Data Structure/Algorithm_01"
 - Appropriate data structure should be chosen according to the data characteristics
 ## Algorithm
 - An algorithm is a sequence of computational steps that transform the input into the output.
-+ An instance of a problem consists of the input needed ot compute a solution to the problem.
- - A correct algorithm:
- - for every input instances, halts with the correct output
+- An instance of a problem consists of the input needed ot compute a solution to the problem.
+A correct algorithm:
+for every input instances, halts with the correct output
 ## Sorting Problem
-+ A sorting algorithm
- - Input: A sequence of _n_ numbers <_a1, a2,..., an_>
- - Output: A permutation (reordering) of the input sequence,
+- A sorting algorithm
+Input: A sequence of _n_ numbers <_a1, a2,..., an_>
+Output: A permutation (reordering) of the input sequence,
 <_b1, b2,..., bn_>, such that _b1=<b2=<...=<bn_
- - Instance: <7, 10, 4, 5, 2>
+Instance: <7, 10, 4, 5, 2>
