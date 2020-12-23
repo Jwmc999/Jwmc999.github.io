@@ -17,11 +17,11 @@ title: "Data Structure/Algorithm_02"
 - Topological sort
 - Dynamic programming
 # Stack and Queue
-## Stack
-## Queue
+- Stack
+- Queue
 # Tree and Graph
-## Tree
-## Graph
+- Tree
+- Graph
 # Algorithm Analysis
 ## Suppose that we have two algorithms. 
 As a computer scientist, how can you tell which is better?
