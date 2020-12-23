@@ -31,7 +31,7 @@ As a computer scientist, how can you tell which is better?
 - Time/space complexities
 - Weak ordering
 # Shortest Path
-## A path between two nodes in a graph such that the sum of weights of its constituent edges is minimized. 
+- A path between two nodes in a graph such that the sum of weights of its constituent edges is minimized. 
 # Minimum Spanning Tree
 # Topological Sort and Critical Path
 # Dynamic Programming
