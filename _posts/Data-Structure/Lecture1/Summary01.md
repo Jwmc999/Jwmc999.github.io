@@ -5,8 +5,8 @@ title: "Data Structure/Algorithm_01"
 **Course Objectives**
 - Discuss key data structures and algorithms essential for solving problems with computers
 - (Powerful) Programming skills
- - Translate your idea into languages that computers can understand
- - Live coding session!
+ + Translate your idea into languages that computers can understand
+ + Live coding session!
 - Computational thinking
  - Problem formulation (abstraction)
  - Solution expression (automation)
