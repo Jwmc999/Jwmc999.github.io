@@ -30,3 +30,4 @@ title: "Non-Linear Data Structure 01"
 - A path is a sequence of nodes (a0, a2, ... , an), where ak+1 is a child of ak.
   - The length of this path is _n_
   - The path (B, E, G) has length 2
+  
