@@ -20,13 +20,13 @@ title: "Non-Linear Data Structure 01"
 - deg(I) = 3
 ## Nodes with the same parent are _siblings_
 - J, K, and L are siblings
-# Leaf and Internal Nodes
-## Nodes with degree zero (zero children) are also called leaf nodes.
-## All other nodes are said to be internal nodes.
-# Unordered & Ordered
-## These trees are equal if the order of the children is ignored: unordered tree
-## They are different if order is relevant: ordered trees
-# Paths
-## A path is a sequence of nodes (a_0_, a_2_, ... , a_n_), where a_k+1_ is a child of a_k_.
-- The length of this path is _n_
-- The path (B,E,G) has length 2
+## Leaf and Internal Nodes
+- Nodes with degree zero (zero children) are also called leaf nodes.
+- All other nodes are said to be internal nodes.
+## Unordered & Ordered
+- These trees are equal if the order of the children is ignored: unordered tree
+- They are different if order is relevant: ordered trees
+## Paths
+- A path is a sequence of nodes (a0, a2, ... , an), where ak+1 is a child of ak.
+  - The length of this path is _n_
+  - The path (B, E, G) has length 2
