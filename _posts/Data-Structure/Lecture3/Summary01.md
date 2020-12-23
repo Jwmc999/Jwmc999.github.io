@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Non-Linear Data Structure 01"
+title: "Non-Linear Data Structure: Tree"
 use_math: true
 comments: true
 ---
