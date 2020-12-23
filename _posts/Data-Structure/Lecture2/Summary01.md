@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lecture2_Summary 01
+title: Linear Data Structure_01
 ---
 # Array
 ## A data structure consisting of a collection of _values_
