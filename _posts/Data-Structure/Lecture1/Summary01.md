@@ -4,17 +4,17 @@ title: "Data Structure/Algorithm_01"
 ---
 **Course Objectives**
 - Discuss key data structures and algorithms essential for solving problems with computers
-- (Powerful) Programming skills
++ (Powerful) Programming skills
  - Translate your idea into languages that computers can understand
  - Live coding session!
-- Computational thinking
++ Computational thinking
  - Problem formulation (abstraction)
  - Solution expression (automation)
  - Solution execution and evaluation (analysis)
 "How to think like a computer scientist"
 
 **Summary**
-- Definitions and examples of 
++ Definitions and examples of 
  - Data structures
  - Algorithms
 
@@ -41,11 +41,11 @@ title: "Data Structure/Algorithm_01"
 - Appropriate data structure should be chosen according to the data characteristics
 ## Algorithm
 - An algorithm is a sequence of computational steps that transform the input into the output.
-- An instance of a problem consists of the input needed ot compute a solution to the problem.
++ An instance of a problem consists of the input needed ot compute a solution to the problem.
  - A correct algorithm:
  - for every input instances, halts with the correct output
 ## Sorting Problem
-- A sorting algorithm
++ A sorting algorithm
  - Input: A sequence of _n_ numbers <_a1, a2,..., an_>
  - Output: A permutation (reordering) of the input sequence,
 <_b1, b2,..., bn_>, such that _b1=<b2=<...=<bn_
