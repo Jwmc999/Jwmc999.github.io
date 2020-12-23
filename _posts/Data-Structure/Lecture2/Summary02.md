@@ -13,7 +13,7 @@ title: "Linear Data Structure: Stack, Queue"
 # Parenthesis Matching
 ## Problem
 - Check if each opening parenthesis has a corresponding closing one. 
-## Example:
+### Example:
 - Balanced: (()()()), (((()))), (()((())()))
 - Unbalanced: (((((()), ())), (()()(()
 # Parenthesis Matching with Stack
@@ -23,7 +23,7 @@ title: "Linear Data Structure: Stack, Queue"
 ## Once processing all the parenthesis, check the status of the stack: 
 - If the stack is empty: it is balanced
 - Otherwise, not balanced.
-## Example: ((()()))
+### Example: ((()()))
 
 # Queue
 ## A collection of elements that are inserted and removed according to the 'first-in first-out (FIFO)' orders.
