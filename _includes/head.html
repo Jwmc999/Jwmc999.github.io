@@ -146,8 +146,7 @@
     {% endfor %}
   {% endif %}
   
-</head>
-
-{% if page.use_math %}
+ {% if page.use_math %}
   {% include mathjax_support.html %}
-{% endif %}
+ {% endif %}
+</head>
