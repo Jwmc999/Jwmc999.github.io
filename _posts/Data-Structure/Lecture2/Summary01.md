@@ -121,8 +121,7 @@ int main()
 answer: 
 A A 
 C C
-### Example
-## What are the results?
+### Example: What are the results?
 ```c
 #include <cstdio>
 
