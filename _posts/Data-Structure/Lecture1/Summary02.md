@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Summary02
+title: "Data Structure/Algorithm_02"
 ---
 
 # Topics
