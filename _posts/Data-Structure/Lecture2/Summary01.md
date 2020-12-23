@@ -49,7 +49,7 @@ int** a = new int* [3];
 int score[3] = {52, 17, 61};
 // When we declare an array, each value gets stored sequentially in the actual RAM.
 ```
-# Example
+### Example
 ```c
 #include <cstdio>
 
@@ -121,7 +121,7 @@ int main()
 answer: 
 A A 
 C C
-# Example
+### Example
 ## What are the results?
 ```c
 #include <cstdio>
