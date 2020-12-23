@@ -27,11 +27,11 @@ title: "Data Structure/Algorithm_01"
 - Process of removing details while preserving information relvant to solving the problem
 ## Fundamental data structures
 | Primitive | Non-Primitive |
-|:---------------------------|---------------------------:|
+|--------------------|---------------------------|
 | Interger, Float, Character | Linear, Non-Linear, Files |
 
 | Linear  | Non-Linear|
-|:-------------|-------------:|
+|-------------|-------------|
 |Arrays, Lists | Trees, Graphs|
 
 |Lists| 
