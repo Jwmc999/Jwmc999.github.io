@@ -22,3 +22,10 @@ author:
  web: https://Jwmc999.github.io
  linkedin: https://linkedin.com/in/mervyn-chung/
  description: "Student"
+
+# Math equation
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
