@@ -15,7 +15,7 @@ title: "Data Structure/Algorithm_01"
 
 **Summary**
 - Definitions and examples of 
- - Data structures
+ -Data structures
  - Algorithms
 
 # **Data Structures**
