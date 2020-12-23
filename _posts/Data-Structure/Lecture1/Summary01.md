@@ -29,11 +29,14 @@ title: "Data Structure/Algorithm_01"
 | Primitive | Non-Primitive |
 |:---------------------------|---------------------------:|
 | Interger, Float, Character | Linear, Non-Linear, Files |
-| | Linear  | Non-Linear|
-|:---------------------------|:--------------:|-------------:|
-| |Arrays, Lists | Trees, Graphs|
-| |Lists| |
-| |Stacks, Queues| |
+
+| Linear  | Non-Linear|
+|:-------------|-------------:|
+|Arrays, Lists | Trees, Graphs|
+
+|Lists| 
+|--------------|
+|Stacks, Queues|
 
 - Appropriate data structure should be chosen according to the data characteristics
 ## Algorithm
