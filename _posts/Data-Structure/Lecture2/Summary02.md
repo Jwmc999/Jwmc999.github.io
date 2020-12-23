@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lecture2_Summary02
+title: Linear Data Structure_02
 ---
 # Stack
 ## A collection of elements that are inserted and removed according to the 'last-in first-out (LIFO)' orders
