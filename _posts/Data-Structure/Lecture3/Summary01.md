@@ -50,4 +50,4 @@ comments: true
   - _a_ is an ancestor of _b_
   - _b_ is a descendent of _a_
 - Thus, a node is both an ancestor and a descendent of itself
-  - We can add the adjective strict to exclude equality: _a_ is a strict descendent of _b_ if _a_ is a descendent of _b_ but _a_ $$\neq$$ _b_
+  - We can add the adjective strict to exclude equality: _a_ is a strict descendent of _b_ if _a_ is a descendent of _b_ but $$a \neq b$$
