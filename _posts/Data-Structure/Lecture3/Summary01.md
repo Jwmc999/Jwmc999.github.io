@@ -51,3 +51,13 @@ comments: true
   - _b_ is a descendent of _a_
 - Thus, a node is both an ancestor and a descendent of itself
   - We can add the adjective strict to exclude equality: _a_ is a strict descendent of _b_ if _a_ is a descendent of _b_ but $$a \neq b$$
+## The root node is an ancestor of all nodes
+### Example
+![ansc](/ancestors.png)
+
+- The descendants of node B are B, C, D, E, F, and G
+- The ancestors of node I are I, H, and A
+## Representation
+- List representation for child nodes (e.g.: linked list)
+  - Store the children with a list of pointers (or node indices). 
+  
