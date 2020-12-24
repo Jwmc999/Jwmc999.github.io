@@ -1,7 +1,6 @@
----yml
+---
 title: "Non-Linear Data Structure: Graph"
 use_math: true
-comments: true
 ---
 # Graph
 - A graph is a data type for storing adjacency relations.
