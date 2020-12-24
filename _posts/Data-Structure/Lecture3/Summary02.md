@@ -119,7 +119,7 @@ $$
 #### Example
 ![directed](/_posts/Data-Structure/Lecture3/directed.png)  
 
-- Given our graph of nine vertices $$V = \left \{ v_{1}, v_{2}, ..., v_{9} \right \}$$
+- Given our graph of nine vertices $V = \left \{ v_{1}, v_{2}, ..., v_{9} \right \}$$
   - These six pairs $(v_{k}, v_{j})$ are _directed edges_
 $$
 E = \left \{ \left \{ v_{1}, v_{2} \right \}\left \{ v_{3}, v_{5} \right \} \left \{ v_{5}, v_{3} \right \}\left \{ v_{6}, v_{9} \right \}\left \{ v_{8}, v_{4} \right \}\left \{ v_{9}, v_{4} \right \}\right \}
@@ -128,36 +128,36 @@ $$
 - The degree of a vertex must be modified to consider both cases:
   - The _out-degree_ of a vertex is the number of vertices which are adjacent to the given vertex
   - The _in-degree_ of a vertex is the number of vertices which this vertex is adjacent to 
-- In this graph:(the graph needs to be updated)
-  in_degree($$v_{1}$$) = 0 | out_degree($$v_{1}$$) = 2
-  in_degree($$v_{5}$$) = 2 | out_degree($$v_{5}$$) = 3
+- In this graph:(needs to be updated)
+  in_degree($v_{1}$) = 0 | out_degree($v_{1}$) = 2
+  in_degree($v_{5}$) = 2 | out_degree($v_{5}$) = 3
 ### Sources and Sinks
 - Sources and Sinks
   - Vertices with an in-degree of zero are described as _sources_
   - Vertices with an out-degree of zero are described as _sinks_
 - In this graph:
-  - Sources: $$v_{1}$$, $$v_{6}$$, $$v_{7}$$
-  - Sinks: $$v_{2}$$, $$v_{9}$$ (this should be updated)
+  - Sources: $v_{1}$, $v_{6}$, $v_{7}$
+  - Sinks: $v_{2}$, $v_{7}$
 ### Paths
 - A path in a directed graph is an ordered sequence or vertices
-   |   $$\left \( v_{1}, v_{2}, ..., v_{k} \right \)$$ |
-  where $$\left \{ v_{j-1}, v_{j} \right \}$$ is an edge for _j = l, ..., k_
+     $$\left \( v_{1}, v_{2}, ..., v_{k} \right \)$$ 
+  where ${ v_{j-1}, v_{j}}$ is an edge for _j = l, ..., k_
 - A path of length 5 in this graph is 
-| $$\left \( v_{1}, v_{4}, v_{5}, v_{3}, v_{5}, v_{2} \right \)$$|
+ $$\left \( v_{1}, v_{4}, v_{5}, v_{3}, v_{5}, v_{2} \right \)$$
 - A simple cycle of length 3 is
-|$$\left \( v_{8}, v_{4}, v_{5}, v_{8} \right \)$$|
+$$\left \( v_{8}, v_{4}, v_{5}, v_{8} \right \)$$
 ### Connectedness
-- Two vertices $$v_{j}$$, $$v_{k}$$ are said to be _connected_ if there exists a path from $$v_{j}$$ to $$v_{k}$$
+- Two vertices $$v_{j}$$, $$v_{k}$$ are said to be _connected_ if there exists a path from $v_{j}$ to $v_{k}$
   - A graph is _strongly connected_ if there exists a directed path between any two vertices
   - A graph is _weakly connected_ if there exists a path between any two vertices that ignores the direction
 - In this graph:
-  - The sub-graph $$\left \{ v_{3}, v_{4}, v_{5}, v_{8} \right \}$$ is strongly connected
-  - The sub-graph  $$\left \{ v_{1}, v_{2}, v_{3}, v_{4}, v_{5}, v_{8} \right \}$$ is weakly connected
+  - The sub-graph ${ v_{3}, v_{4}, v_{5}, v_{8}}$ is strongly connected
+  - The sub-graph  ${ v_{1}, v_{2}, v_{3}, v_{4}, v_{5}, v_{8}}$ is weakly connected
 ### Weighted Directed Graphs
 ![weightdirect](/_posts/Data-Structure/Lecture3/weigtheddirected.png)
 
 - In a weighted directed graphs, each edges is associated with a value
-- Unlike weighted undirected graphs, if both $$\left \( v_{j}, v_{k} \right \)$$ and $$\left \( v_{k}, v_{j} \right \)$$ are edges, it is not required that they have the same weight
+- Unlike weighted undirected graphs, if both $( v_{j}, v_{k})$ and $( v_{k}, v_{j})$ are edges, it is not required that they have the same weight
 ### Directed Acyclic Graphs (DAG)
 - A directed _acyclic graph_ is a directed graph which has no cycles
   - These are commonly referred to as DAGs
@@ -174,16 +174,16 @@ $$
 ## Binary-Relation List
 - The most inefficient is a relation list: 
   - A container storing the edges
-  - Requires $$\Theta \left ( \left |E  \right | \right )$$ memory
-  - Determining if $$v_{j}$$ is adjacent to $$v_{k}$$ is $$\Theta \left ( \left |E  \right | \right )$$
-  - Finding all neighbors of $$v_{j}$$ is $$\Theta \left ( \left |E  \right | \right )$$
+  - Requires $Theta(|E|)$ memory
+  - Determining if $v_{j}$ is adjacent to $v_{k}$ is $Theta(|E|)$
+  - Finding all neighbors of $v_{j}$ is $Theta(|E|)$
 ## Adjacency Matrix
 - Requiring more memory but also faster, an adjacency matrix
-  - The matrix entry (_j_, _k_) is set to **true** if there is an edge $$\left \( v_{j}, v_{k} \right \)$$ 
-  - Requires $$\Theta \left ( \left |V  \right |^{2} \right )$$ memory
-  - Determining if $$v_{j}$$ is adjacent to $$v_{k}$$ is $$\Theta \left ( 1  \right )$$
-  - Finding all neighbors of $$v_{j}$$ is $$\Theta \left ( \left |V  \right | \right )$$
-  - Most efficient for existence of an edge between $$v_{j}$$ and $$v_{k}$$
+  - The matrix entry (_j_, _k_) is set to **true** if there is an edge $( v_{j}, v_{k})$ 
+  - Requires $Theta(|V|^{2})$ memory
+  - Determining if $v_{j}$ is adjacent to $v_{k}$ is $Theta(1)$
+  - Finding all neighbors of $v_{j}$ is $Theta(|V|)$
+  - Most efficient for existence of an edge between $v_{j}$ and $v_{k}$
 - Adjacency matrix of a weighted graph:
   - Put the weight value to the cell
   
@@ -191,6 +191,6 @@ $$
 ## Adjacency List
 - Most efficient for algorithms is an adjacency list
   - Each vertex is associated with a list of its neighbors
-  - Requires $$\Theta \left ( \left |V  \right |+\left | E \right | \right )$$ memory
+  - Requires $Theta(|V|+|E|)$ memory
  
    ![adjlist](/_posts/Data-Structure/Lecture3/adjlist.png)
