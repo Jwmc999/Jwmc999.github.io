@@ -12,9 +12,7 @@ use_math: true
 - Computer networks, Road networks, Circuits, CS curriculum
 ## Undirected Graphs
 - We define an _**undirected graph**_ as a collection of vertices
-$$
-V = \left \{ v_{1}, v_{2}, ..., v_{n} \right \}
-$$
+$$V = \left \{ v_{1}, v_{2}, ..., v_{n} \right \}$$
   - The number of vertices is denoted by $|V| = n$
   - Associated with this is a collection E of unordered pairs ${ v_{i}, v_{j}}$ termed edges which connect the vertices
 - There are a number of data structures that can be used to implement graphs
