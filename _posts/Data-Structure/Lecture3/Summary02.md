@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Non-Linear Data Structure: Graph"
-use_math: true
+mathjax: true
 ---
 
 # Graph
