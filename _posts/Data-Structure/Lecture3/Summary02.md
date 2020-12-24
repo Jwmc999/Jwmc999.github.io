@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: post
 title: "Non-Linear Data Structure: Graph"
-mathjax_support: true
+use_math: true
 ---
 # Graph
 - A graph is a data type for storing adjacency relations.
