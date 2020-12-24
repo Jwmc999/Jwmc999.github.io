@@ -37,9 +37,11 @@ description: Blog on C S
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-hacker
-## Introduction
+
+# About
 * Prologue
-### Journey Codes
+
+# Journey Codes
 * Stage 0. Pack Up!
 * Data Structure
 * C Language 
