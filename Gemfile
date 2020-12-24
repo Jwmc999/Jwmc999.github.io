@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 source 'http://rubygems.org'
-
+gem 'github-pages'
 gem 'rails', '3.0.7'
 
 # Bundle edge Rails instead:
