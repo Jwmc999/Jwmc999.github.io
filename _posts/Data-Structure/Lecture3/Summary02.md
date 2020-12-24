@@ -3,7 +3,6 @@ layout: post
 title: "Non-Linear Data Structure: Graph"
 use_math: true
 comments: true
-
 ---
 # Graph
 - A graph is a data type for storing adjacency relations.
@@ -13,29 +12,35 @@ comments: true
 - Computer networks, Road networks, Circuits, CS curriculum
 ## Undirected Graphs
 - We define an _**undirected graph**_ as a collection of vertices
-|$$V = \left \{ v_{1}, v_{2}, ..., v_{n} \right \}$$|
-  - The number of vertices is denoted by $$\left | V \right | = n$$
-  - Associated with this is a collection E of unordered pairs $$\left \{ v_{i}, v_{j} \right \}$$ termed edges which connect the vertices
+$$
+V = \left \{ v_{1}, v_{2}, ..., v_{n} \right \}
+$$
+  - The number of vertices is denoted by $|V| = n$
+  - Associated with this is a collection E of unordered pairs ${ v_{i}, v_{j}}$ termed edges which connect the vertices
 - There are a number of data structures that can be used to implement graphs
   - Adjacency matrices
   - Adjacency lists
 - We will assume in this course that a vertex is never adjacent to itself
-  - For example, $$\left \{ v_{1}, v_{2} \right \}$$ will not define an edge
+  - For example, ${ v_{1}, v_{2}}$ will not define an edge
 - The maximum number of edges in an undirected graph is
-|$$\left | E \right |\leq \binom{\left | V \right |}{2}= \frac{\left | V \right |\left ( \left | V \right |-1 \right )}{2}=O\left ( \left | V \right |^{2} \right )$$|
+$$
+\left | E \right |\leq \binom{\left | V \right |}{2}= \frac{\left | V \right |\left ( \left | V \right |-1 \right )}{2}=O\left ( \left | V \right |^{2} \right )
+$$
 #### Example 01
 - Consider this collection of vertices
-|$$V = \left \{ v_{1}, v_{2}, ..., v_{9} \right \}$$|
-where $$\left | V \right | = 9$$
+$$V = \left \{ v_{1}, v_{2}, ..., v_{9} \right \}$$
+where $|V| = 9$
 
 ![edges](/_posts/Data-Structure/Lecture3/edge.png)
-- Associated with these vertices are $$\left | E \right | = 5$$ edges
-|$$E = \left \{ \left \{ v_{1}, v_{2} \right \}\left \{ v_{3}, v_{5} \right \} \left \{ v_{4}, v_{8} \right \}\left \{ v_{4}, v_{9} \right \}\left \{ v_{6}, v_{9} \right \}\right \}$$|
-  - The pair $$\left \{ v_{j}, v_{k} \right \}$$ indicates that both vertex $$v_{j}$$ is adjacent to vertex $$v_{k}$$ and vertex $$v_{k}$$ is adjacent to vertex $$v_{j}$$
+- Associated with these vertices are $|E| = 5$ edges
+$$
+E = \left \{ \left \{ v_{1}, v_{2} \right \}\left \{ v_{3}, v_{5} \right \} \left \{ v_{4}, v_{8} \right \}\left \{ v_{4}, v_{9} \right \}\left \{ v_{6}, v_{9} \right \}\right \}
+$$
+  - The pair ${ v_{j}, v_{k}}$ indicates that both vertex $v_{j}$ is adjacent to vertex $v_{k}$ and vertex $v_{k}$ is adjacent to vertex $v_{j}$
 #### Example 02
-- given the $$\left | V \right |=n$$ vertices
+- given the $|V|=n$ vertices
 = {A, B, C, D, E, F, G}
-and the $$\left | E \right |=9$$ edges
+and the $|E|=9$ edges
 
 ![exm2](/_posts/Data-Structure/Lecture3/exm.png)
 ### Degree
@@ -50,9 +55,11 @@ and the $$\left | E \right |=9$$ edges
 ![subgraph](/_posts/Data-Structure/Lecture3/subgraph.png)
 ### Paths
 - A path in an undirected graph is an ordered sequence of vertices
-|$$\left \( v_{1}, v_{2}, ..., v_{k} \right \)$$|
-  Where $$\left \{ v_{j-1}, v_{j} \right \}$$ is an edge for _j = l, ..., k_
-  - Termed a path from $$v_{0}$$ to $$v_{k}$$
+$$
+\left \( v_{1}, v_{2}, ..., v_{k} \right \)
+$$
+  Where ${ v_{j-1}, v_{j}}$ is an edge for _j = l, ..., k_
+  - Termed a path from $v_{0}$ to $v_{k}$
   - The length of this path is _k_
 #### Example
 ![graphpath](/_posts/Data-Structure/Lecture3/graphpath.png)
@@ -71,7 +78,7 @@ and the $$\left | E \right |=9$$ edges
 ### Connectedness
 ![connected](/_posts/Data-Structure/Lecture3/connected.png)
 
-- Two vertices $$v_{i}$$, $$v_{j}$$ are said to be _connected_ if there exists a path from $$v_{i}$$ to $$v_{j}$$
+- Two vertices $v_{i}$, $v_{j}$ are said to be _connected_ if there exists a path from $v_{i}$ to $v_{j}$
 - A grapth is connected if there exists a path between any two vertices
 ### Weighted Graphs
 ![weight](/_posts/Data-Structure/Lecture3/weight.png)
@@ -92,7 +99,7 @@ and the $$\left | E \right |=9$$ edges
 
 ![treegraph](/_posts/Data-Structure/Lecture3/treegraph.png)
 - Consequences:
-  - The number of edges is $$\left | E \right |=\left | V \right |-1$$ ($$\left | V \right |$$: number of nodes)
+  - The number of edges is $|E|=|V|-1$ ($|V|$: number of nodes)
   - The graph is _acyclic_, that is, it does not contain any cycles
   - Adding one more edge must create a cycle
   - Removing any one edge creates two disjoint non-empty sub-graphs
@@ -100,8 +107,8 @@ and the $$\left | E \right |=9$$ edges
 - A forest is any graph that has no cycles
 - The collection of the tree. A forest removes the connectedness constraint from the tree.
 - Consequences:
-  - The number of edges is $$\left | E \right |< \left | V \right |$$
-  - The number of trees is $$\left | V \right | - \left | E \right |$$
+  - The number of edges is $|E|<|V|$
+  - The number of trees is $|V| - |E|$
   - Removing any one edge adds one more tree to the forest
 - Here is a forest with 22 vertices and 18 edges
   
@@ -110,14 +117,16 @@ and the $$\left | E \right |=9$$ edges
 ---------------------------------------------------------------------------------------------------
 ## Directed Graphs
 - In a _**directed graph**_, the edges on a graph are be associated with a direction
-  - Edges are ordered pairs ($$v_{j}$$, $$v_{k}$$) denoting a connection from $$v_{j}$$ to $$v_{k}$$
-  - The edge ($$v_{j}$$, $$v_{k}$$) is different from the edge ($$v_{k}$$, $$v_{j}$$)
+  - Edges are ordered pairs $(v_{j}, v_{k})$ denoting a connection from $v_{j}$ to $v_{k}$
+  - The edge $(v_{j}, v_{k})$ is different from the edge $(v_{k}, v_{j})$
 #### Example
 ![directed](/_posts/Data-Structure/Lecture3/directed.png)  
 
 - Given our graph of nine vertices $$V = \left \{ v_{1}, v_{2}, ..., v_{9} \right \}$$
-  - These six pairs ($$v_{k}$$, $$v_{j}$$) are _directed edges_
-  |$$E = \left \{ \left \{ v_{1}, v_{2} \right \}\left \{ v_{3}, v_{5} \right \} \left \{ v_{5}, v_{3} \right \}\left \{ v_{6}, v_{9} \right \}\left \{ v_{8}, v_{4} \right \}\left \{ v_{9}, v_{4} \right \}\right \}$$|
+  - These six pairs $(v_{k}, v_{j})$ are _directed edges_
+$$
+E = \left \{ \left \{ v_{1}, v_{2} \right \}\left \{ v_{3}, v_{5} \right \} \left \{ v_{5}, v_{3} \right \}\left \{ v_{6}, v_{9} \right \}\left \{ v_{8}, v_{4} \right \}\left \{ v_{9}, v_{4} \right \}\right \}
+$$
 ### In and Out Degrees
 - The degree of a vertex must be modified to consider both cases:
   - The _out-degree_ of a vertex is the number of vertices which are adjacent to the given vertex
