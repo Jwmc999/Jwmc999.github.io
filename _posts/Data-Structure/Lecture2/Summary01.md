@@ -3,39 +3,39 @@ layout: post
 title: "Linear Data Structure: Array, Pointer"
 ---
 # Array
-## A data structure consisting of a collection of _values_
-## Each identified by array _index_
-- In C/C++/Java programming languages, array index begins from 0.
-  The range of array index is [0, size -1].
+- A data structure consisting of a collection of _**values**_
+- Each identified by array _**index**_
+  - In C/C++/Java programming languages, array index begins from 0.
+  - The range of array index is [0, size -1].
 ```c
 int score[10];//Data type Array name [Array size];
 ```
-## In C/C++ programming language,
-- A consecutive set of memory location
-- Logical order is the same as the physical order
-- Creation of an array
+- In C/C++ programming language,
+  - A consecutive set of memory location
+  - Logical order is the same as the physical order
+  - Creation of an array
 ```c
 Type d[10];
 Type *d = new Type[size];//Dynamically assign the size of the array. 1) Declare the type and d as pointers 2) Use "new" operator 
 // We can assign the size of the array according to the specific number
 ```
-- Accessing an element by array index
+  - Accessing an element by array index
 ```c
 d[5] = 2;
 ```
-- Release the allocated
+  - Release the allocated
 ```c
 delete [] d;
 ```
-# Creation of Arrays in C++ Programming Language
-## 1-dimmensional array
+## Creation of Arrays in C++ Programming Language
+### 1-dimmensional array
 ```c
 int arr[10];
 ```
 ```c
 int* arr = new int[10];
 ```
-## 2-dimensional array
+### 2-dimensional array
 ```c
 int a[3][4];
 ```
@@ -44,12 +44,12 @@ int** a = new int* [3];
   for(int i=0;i<3;i++)
       a[i] = new int[4];
 ```
-# Array in Memory
+## Array in Memory
 ```c
 int score[3] = {52, 17, 61};
 // When we declare an array, each value gets stored sequentially in the actual RAM.
 ```
-### Example
+#### Example
 ```c
 #include <cstdio>
 
@@ -68,18 +68,19 @@ for(int row = 0; row<6; row++)
   }
 }
 ```
+---------------------------------------------------------------------------------------------------
 # Pointer
-## A variable storing a _mermory address_
-- Represent the variable with 3 axes: name, value, address of memory
+- A variable storing a _**mermory address**_
+  - Represent the variable with 3 axes: name, value, address of memory
 ```c
 int n = 3; //If you put *, it becomes the pointer data type. 
 int* pn = &n; //pointer called pn. Initialize the variable pn with the address of n.
 // the value of pn becomes the address of n
 // *pn is an integer
 ```
-# & (Ampersand) Operator
-## Reference operator
-- Returns the address of a variable.
+## & (Ampersand) Operator
+- Reference operator
+  - Returns the address of a variable.
 ```c
 #include <cstdio>
 
@@ -95,10 +96,10 @@ int main()
   return 0;
 }
 ```
-# * (Asterisk) Operator
-## Deference operator
-- Returns the value at the pointer address.
-- In other words, if you put * to the pointer, you can access the value of the variable that the pointer is pointing.
+## * (Asterisk) Operator
+- Deference operator
+  - Returns the value at the pointer address.
+  - In other words, if you put * to the pointer, you can access the value of the variable that the pointer is pointing.
 ```c
 #include <cstdio>
 
@@ -121,7 +122,7 @@ int main()
 answer: 
 A A 
 C C
-### Example: What are the results?
+#### Example: What are the results?
 ```c
 #include <cstdio>
 
@@ -139,11 +140,10 @@ int main()
 }
 ```
 answer: 10 20 30
-
-# Function Call with Pointers
-## Two types of passing augments to a function:
-- Call by value: passing values. Cannot change the value.
-- Call by reference: passing addresses (pointers). Can change the value of the variable. 
+## Function Call with Pointers
+- Two types of passing augments to a function:
+  - Call by value: passing values. Cannot change the value.
+  - Call by reference: passing addresses (pointers). Can change the value of the variable. 
  ```c
  #include <cstdio>
  
@@ -177,19 +177,18 @@ void swap2(int* px, int* py)
   *py = temp;
 }
 ```
-
-# Insertion and Deletion in Arrays
+## Insertion and Deletion in Arrays
 - Insertion and deletion can require significant number of operations in arrays.
-# Linked Lists
+### Linked Lists
 - A linear collection of data elements
 - Order is not given by their physical placement in memory.
 - Each element points to the next.
 - Each node consists of an **item** and a **link** (hook)
-# Inserting & Deleting an Element into a Linked List
+### Inserting & Deleting an Element into a Linked List
 - Works
-# Linked List Implementation
-## A node consists of an item and a next pointer
-## A linked list has its length and a pointer to the head node.
+### Linked List Implementation
+- A node consists of an item and a next pointer
+- A linked list has its length and a pointer to the head node.
 ```c
 typedef int Data;
 
@@ -205,9 +204,8 @@ typedef struct
   int len;
 } LinkedList;
 ```
-
-# Arrow and Box Representation
-## Box: an item
-## Arrow: a pointer to the next box
-- If the arrow points nothing, it is called the NULL pointer.
-## The head points the fist node.
+## Arrow and Box Representation
+- Box: an item
+- Arrow: a pointer to the next box
+  - If the arrow points nothing, it is called the NULL pointer.
+- The head points the fist node.
