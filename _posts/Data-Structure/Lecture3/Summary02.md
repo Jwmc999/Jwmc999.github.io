@@ -3,6 +3,7 @@ layout: post
 title: "Non-Linear Data Structure: Graph"
 use_math: true
 comments: true
+
 ---
 # Graph
 - A graph is a data type for storing adjacency relations.
@@ -26,6 +27,7 @@ comments: true
 - Consider this collection of vertices
 |$$V = \left \{ v_{1}, v_{2}, ..., v_{9} \right \}$$|
 where $$\left | V \right | = 9$$
+
 ![edges](/_posts/Data-Structure/Lecture3/edge.png)
 - Associated with these vertices are $$\left | E \right | = 5$$ edges
 |$$E = \left \{ \left \{ v_{1}, v_{2} \right \}\left \{ v_{3}, v_{5} \right \} \left \{ v_{4}, v_{8} \right \}\left \{ v_{4}, v_{9} \right \}\left \{ v_{6}, v_{9} \right \}\right \}$$|
@@ -34,6 +36,7 @@ where $$\left | V \right | = 9$$
 - given the $$\left | V \right |=n$$ vertices
 = {A, B, C, D, E, F, G}
 and the $$\left | E \right |=9$$ edges
+
 ![exm2](/_posts/Data-Structure/Lecture3/exm.png)
 ### Degree
 - The degree of a vertex is defined as the number of adjacent vertices
@@ -43,6 +46,7 @@ and the $$\left | E \right |=9$$ edges
  - Those vertices adjacent to a given vertex are its _neighbors_
 ### Sub-Graphs
 - A _sub-graph_ of a graph: a subset of the vertices and a subset of the edges that connected the subset of vertices in the original graph
+
 ![subgraph](/_posts/Data-Structure/Lecture3/subgraph.png)
 ### Paths
 - A path in an undirected graph is an ordered sequence of vertices
@@ -53,8 +57,10 @@ and the $$\left | E \right |=9$$ edges
 #### Example
 ![graphpath](/_posts/Data-Structure/Lecture3/graphpath.png)
 - A path of length 4
+
 ![graphpath2](/_posts/Data-Structure/Lecture3/graphpath2.png)
 - A path of length 5
+
 ![trivialpath](/_posts/Data-Structure/Lecture3/trivialpath.png)
 - A _trivial_ path of length 0
 ### Simple Paths
@@ -143,6 +149,7 @@ and the $$\left | E \right |=9$$ edges
   - The sub-graph  $$\left \{ v_{1}, v_{2}, v_{3}, v_{4}, v_{5}, v_{8} \right \}$$ is weakly connected
 ### Weighted Directed Graphs
 ![weightdirect](/_posts/Data-Structure/Lecture3/weigtheddirected.png)
+
 - In a weighted directed graphs, each edges is associated with a value
 - Unlike weighted undirected graphs, if both $$\left \( v_{j}, v_{k} \right \)$$ and $$\left \( v_{k}, v_{j} \right \)$$ are edges, it is not required that they have the same weight
 ### Directed Acyclic Graphs (DAG)
@@ -151,7 +158,7 @@ and the $$\left | E \right |=9$$ edges
   - They are graphical representations of partial orders on a finite number of elements
 - These two are DAGs:
 
-![DAG](/_posts/Data-Structure/Lecture3/DAG.png)
+  ![DAG](/_posts/Data-Structure/Lecture3/DAG.png)
 ---------------------------------------------------------------------------------------------------
 # Representations
 - How do we store the adjacency relations?
@@ -180,6 +187,4 @@ and the $$\left | E \right |=9$$ edges
   - Each vertex is associated with a list of its neighbors
   - Requires $$\Theta \left ( \left |V  \right |+\left | E \right | \right )$$ memory
  
- ![adjlist](/_posts/Data-Structure/Lecture3/adjlist.png)
-  
-  
+   ![adjlist](/_posts/Data-Structure/Lecture3/adjlist.png)
