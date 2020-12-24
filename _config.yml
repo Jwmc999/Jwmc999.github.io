@@ -64,7 +64,7 @@ excerpt_separator: "\n\n"
 incremental: false
 
 # Set this to true to get LaTeX math equation support
-use_math: True
+use_math: false
 
 # Serving
 detach              : false
