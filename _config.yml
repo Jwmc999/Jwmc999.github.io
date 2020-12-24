@@ -38,13 +38,6 @@ show_downloads: true
 google_analytics:
 theme: jekyll-theme-hacker
 
-# Journey Codes
-* Stage 0. Pack Up!
-* Data Structure
-* C Language 
-* Discrete Mathematics 
-* Extra Curriculum 
-
 # Author
 author:
  sal: Jaewon Mervyn Chung
