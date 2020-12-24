@@ -1,6 +1,6 @@
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "neon"
 
 # Site Settings
 locale                   : "en-US"
@@ -49,12 +49,6 @@ yandex_site_verification :
 naver_site_verification  :
 
 # Social Sharing
-twitter:
-  username               :
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
 og_image                 : "/thumbnail.png"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
