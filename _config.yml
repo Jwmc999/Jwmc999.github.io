@@ -23,7 +23,7 @@ author:
  linkedin: https://linkedin.com/in/mervyn-chung/
  description: "Student"
 
-# Math equation
+# Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
