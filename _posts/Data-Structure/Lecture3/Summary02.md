@@ -64,10 +64,12 @@ and the $$\left | E \right |=9$$ edges
 - **What is the example of "simple cycle"?**
 ### Connectedness
 ![connected](/_posts/Data-Structure/Lecture3/connected.png)
+
 - Two vertices $$v_{i}$$, $$v_{j}$$ are said to be _connected_ if there exists a path from $$v_{i}$$ to $$v_{j}$$
 - A grapth is connected if there exists a path between any two vertices
 ### Weighted Graphs
 ![weight](/_posts/Data-Structure/Lecture3/weight.png)
+
 - A weight may be associated with each edge in a graph
   - This could represent distance, energy consumption, cost, etc.
   - Such a graph is called a _weighted graph_
@@ -81,7 +83,8 @@ and the $$\left | E \right |=9$$ edges
 ### Trees
 - A graph is a tree if it is connected and there is a unique path between any two vertices
   - Three trees on the same eight vertices
-  ![treegraph](/_posts/Data-Structure/Lecture3/treegraph.png)
+
+![treegraph](/_posts/Data-Structure/Lecture3/treegraph.png)
 - Consequences:
   - The number of edges is $$\left | E \right |=\left | V \right |-1$$ ($$\left | V \right |$$: number of nodes)
   - The graph is _acyclic_, that is, it does not contain any cycles
@@ -95,6 +98,7 @@ and the $$\left | E \right |=9$$ edges
   - The number of trees is $$\left | V \right | - \left | E \right |$$
   - Removing any one edge adds one more tree to the forest
 - Here is a forest with 22 vertices and 18 edges
+  
   ![forest](/_posts/Data-Structure/Lecture3/forest.png)
   - There are four trees
 ---------------------------------------------------------------------------------------------------
@@ -104,6 +108,7 @@ and the $$\left | E \right |=9$$ edges
   - The edge ($$v_{j}$$, $$v_{k}$$) is different from the edge ($$v_{k}$$, $$v_{j}$$)
 #### Example
 ![directed](/_posts/Data-Structure/Lecture3/directed.png)  
+
 - Given our graph of nine vertices $$V = \left \{ v_{1}, v_{2}, ..., v_{9} \right \}$$
   - These six pairs ($$v_{k}$$, $$v_{j}$$) are _directed edges_
   |$$E = \left \{ \left \{ v_{1}, v_{2} \right \}\left \{ v_{3}, v_{5} \right \} \left \{ v_{5}, v_{3} \right \}\left \{ v_{6}, v_{9} \right \}\left \{ v_{8}, v_{4} \right \}\left \{ v_{9}, v_{4} \right \}\right \}$$|
@@ -145,6 +150,7 @@ and the $$\left | E \right |=9$$ edges
   - These are commonly referred to as DAGs
   - They are graphical representations of partial orders on a finite number of elements
 - These two are DAGs:
+
 ![DAG](/_posts/Data-Structure/Lecture3/DAG.png)
 ---------------------------------------------------------------------------------------------------
 # Representations
@@ -167,11 +173,13 @@ and the $$\left | E \right |=9$$ edges
   - Most efficient for existence of an edge between $$v_{j}$$ and $$v_{k}$$
 - Adjacency matrix of a weighted graph:
   - Put the weight value to the cell
+  
   ![adjmatrix](/_posts/Data-Structure/Lecture3/adjmat.png)
 ## Adjacency List
 - Most efficient for algorithms is an adjacency list
   - Each vertex is associated with a list of its neighbors
   - Requires $$\Theta \left ( \left |V  \right |+\left | E \right | \right )$$ memory
-  ![adjlist](/_posts/Data-Structure/Lecture3/adjlist.png)
+ 
+ ![adjlist](/_posts/Data-Structure/Lecture3/adjlist.png)
   
   
