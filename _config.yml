@@ -1,5 +1,5 @@
-title: "Welcome to Data Journey"
-name: "Data Journey"
-description: "Blog on C S"
-url: "https://jwmc999.github.io"
+title: Data Journey
+description: Blog on C S
+show_downloads: true
+google_analytics:
 theme: jekyll-theme-hacker
