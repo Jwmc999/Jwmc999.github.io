@@ -1,38 +1,25 @@
-# Handling Reading
-safe                : false
-include             : [".htaccess"]
-exclude             : ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
-keep_files          : [".git", ".svn"]
-encoding            : "utf-8"
-markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
-strict_front_matter : false
-
-# Filtering Content
-show_drafts         : null
-limit_posts         : 0
-future              : false
-unpublished         : false
-
-# Plugins
-whitelist           : []
-plugins             : []
-
 # Site
-title: Data Journey
-description: Blog on C S
+title: "Welcome to Data Journey"
+name: "Data Journey"
+description: "Blog on C S"
+url: "https://jwmc999.github.io"
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-hacker
 
-# Author
-author:
- sal: Jaewon Mervyn Chung
- display_name: MERVYN
- gravatar: 
- email: rskessy@gmail.com
- web: https://jwmc999.github.io
- linkedin: https://linkedin.com/in/mervyn-chung/
- description: "Student"
+# Analytics
+analytics:
+  provider               : false # 구글 어날리틱스 등록 false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          :
+    anonymize_ip         : # true, false (default)
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Jwmc999"
 
 # Conversion
 markdown: kramdown
@@ -72,3 +59,29 @@ kramdown:
   hard_wrap         : false
   footnote_nr       : 1
   show_warnings     : false
+  
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # 블로그 댓글 기능 true
+      share: true
+      related: true
+
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: false
