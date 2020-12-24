@@ -1,4 +1,5 @@
-<!>
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">  
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -146,9 +147,5 @@
       {% include {{ file }} %}
     {% endfor %}
   {% endif %}
-  
- {% if page.use_math %}
-  {% include mathjax_support.html %}
- {% endif %}
   
 </head>
