@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: post
 title: "Non-Linear Data Structure: Graph"
-mathjax: true
+use_math: true
 ---
 
 # Graph
