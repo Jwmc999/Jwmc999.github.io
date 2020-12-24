@@ -3,6 +3,11 @@ layout: default
 title: "Non-Linear Data Structure: Graph"
 use_math: true
 ---
+<script type="text/javascript" async
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js? 
+config=TeX-MML-AM_CHTML"
+</script>
+
 
 # Graph
 - A graph is a data type for storing adjacency relations.
