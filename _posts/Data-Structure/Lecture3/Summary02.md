@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Non-Linear Data Structure: Graph"
 use_math: true
 ---
