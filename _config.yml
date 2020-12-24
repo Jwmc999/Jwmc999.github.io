@@ -1,7 +1,5 @@
-# Site
 title: "Welcome to Data Journey"
 name: "Data Journey"
 description: "Blog on C S"
 url: "https://jwmc999.github.io"
-show_downloads: true
 theme: jekyll-theme-hacker
