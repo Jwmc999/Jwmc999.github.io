@@ -39,7 +39,7 @@ $$
 = {A, B, C, D, E, F, G}
 and the $|E|=9$ edges
 
-![exm2](/_posts/Data-Structure/Lecture3/exm.png)
+![exm2](/_posts/Data-Structure/Lecture3/exm2.png)
 ### Degree
 - The degree of a vertex is defined as the number of adjacent vertices
     |degree(A) = degree(D) = degree(C) = 3|
@@ -154,7 +154,7 @@ $$\left \( v_{8}, v_{4}, v_{5}, v_{8} \right \)$$
   - The sub-graph ${ v_{3}, v_{4}, v_{5}, v_{8}}$ is strongly connected
   - The sub-graph  ${ v_{1}, v_{2}, v_{3}, v_{4}, v_{5}, v_{8}}$ is weakly connected
 ### Weighted Directed Graphs
-![weightdirect](/_posts/Data-Structure/Lecture3/weigtheddirected.png)
+![weightdirect](/_posts/Data-Structure/Lecture3/weighteddirected.png)
 
 - In a weighted directed graphs, each edges is associated with a value
 - Unlike weighted undirected graphs, if both $( v_{j}, v_{k})$ and $( v_{k}, v_{j})$ are edges, it is not required that they have the same weight
