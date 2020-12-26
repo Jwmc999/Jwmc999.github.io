@@ -1,7 +1,7 @@
 # frozen_string_literal: true
-source 'http://rubygems.org'
-gem 'github-pages'
-gem 'rails', '3.0.7'
+source 'https://rubygems.org'
+gem 'github-pages', '160',  :group => :jekyll_plugins
+gem 'tzinfo-data', :platforms => [:mingw, :mswin, :x64_mingw]
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
