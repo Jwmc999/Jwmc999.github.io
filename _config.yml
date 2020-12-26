@@ -1,14 +1,6 @@
 # Settings
-title: Data Journey
-description: Blog on C S
+title: "Data Journey"
+description: "Blog on C S"
 show_downloads: true
 google_analytics: 
-theme: jekyll-theme-hacker
-
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
+theme: hacker
