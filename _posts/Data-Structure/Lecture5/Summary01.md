@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Asymptotic Annalysis_01"
 ---
 # Background
