@@ -49,3 +49,7 @@ Algorithms
   - Input: A sequence of _n_ numbers <_a1, a2,..., an_>
   - Output: A permutation (reordering) of the input sequence, <_b1, b2,..., bn_>, such that _b1=<b2=<...=<bn_
   - Instance: <7, 10, 4, 5, 2>
+
+**source**
+"K-MOOC 허재필 교수님의 <인공지능을 위한 알고리즘과 자료구조: 이론, 코딩, 그리고 컴퓨팅 사고>
+강좌의 1-1 자료구조/알고리즘의 정의와 중요성 중(http://www.kmooc.kr/courses/course-v1:SKKUk+SKKU_46+2020_T1)"
