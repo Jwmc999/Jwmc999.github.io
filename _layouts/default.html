@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
     {% include head.html %}
-    {% include mathjax_support.html %}  
     {% seo %}
     
   </head>
@@ -48,5 +47,7 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
+    
+    {% include Mathjax.html %}  
   </body>
 </html>
