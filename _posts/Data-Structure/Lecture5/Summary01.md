@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Asymptotic Annalysis_01"
-use_math: true
 ---
 # Background
 - Suppose that we have two algorithms, how can we tell which is better?
@@ -87,6 +86,7 @@ use_math: true
   - If $f(n)\sim g(n)$, then it is always possible to improve the performance of one function over the other by purchasing a faster computer
   - If $f(n) < g(n)$, then you can never purchase a computer fast enough so that the second function always runs in less time than the first
     - In other words, you can firmly say f(n) is more efficient than g(n)
+
 **source**
 "K-MOOC 허재필 교수님의 <인공지능을 위한 알고리즘과 자료구조: 이론, 코딩, 그리고 컴퓨팅 사고>
 강좌의 5-1 함수의 점근적 분석법 중(http://www.kmooc.kr/courses/course-v1:SKKUk+SKKU_46+2020_T1)"
