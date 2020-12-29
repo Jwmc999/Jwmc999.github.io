@@ -8,7 +8,7 @@ title: "Asymptotic Analysis_02"
     $$ 0 \leq c_{1}g(n) \leq f(n) \leq c_{2}g(n) $$
     for all $n \geq n_{0}$
     
-    ![theta](_posts/Data-Structure/Lecture5/theta.png)
+    ![theta](/_posts/Data-Structure/Lecture5/theta.png)
     
     - $f(n)$ has a rate of growth equal to that of $g(n)$
     - $f(n)$ belongs to $\Theta(g(n))$
@@ -25,7 +25,7 @@ title: "Asymptotic Analysis_02"
      $$ 0 \leq f(n) \leq cg(n) $$
      for all $n \geq n_{0}$
      
-    ![bigo](_posts/Data-Structure/Lecture5/bigo.png)
+    ![bigo](/_posts/Data-Structure/Lecture5/bigo.png)
      
     - $g(n)$ is an _**asymptotically upper bound**_ for $f(n)$ 
     - $f(n)=\Theta(g(n))$ implies $f(n)=O(g(n))$
@@ -41,7 +41,7 @@ title: "Asymptotic Analysis_02"
      $$ 0 \leq cg(n) \leq f(n) $$
      for all $n \geq n_{0}$
     
-    ![omega](_posts/Data-Structure/Lecture5/omega.png)
+    ![omega](/_posts/Data-Structure/Lecture5/omega.png)
     
     - $g(n)$ is an _**asymptotically lower bound**_ for $f(n)$ 
     - $f(n)=\Theta(g(n))$ implies $f(n)=\Omega(g(n))$
@@ -92,7 +92,7 @@ title: "Asymptotic Analysis_02"
   | $f(n)=\Omega(g(n))$ | $\lim_{n\rightarrow \infty}\frac{f(n)}{g(n)} > 0$ |
   | $f(n)=\omega(g(n))$ | $\lim_{n\rightarrow \infty}\frac{f(n)}{g(n)} = \infty$ |
 
-  ![relations](_posts/Data-Structure/Lecture5/relations.png)
+  ![relations](/_posts/Data-Structure/Lecture5/relations.png)
   
 ## Common Classes
 - The most common classes are given names:
@@ -106,7 +106,7 @@ title: "Asymptotic Analysis_02"
   | $\Theta(n^3)$ | cubic |
   | $2^n, e^n, 4^n, ... | exponential |
 ## Weak Ordering
-![worder](\worder.png)
+![worder](/_posts/Data-Structure/Lecture5/worder.png)
 ## Algorithm Analysis
 - We will use the notations to describe the complexity of algorithms
   - e.g.: Adding a list of _n_ floats will be said to be a $\Theta(n)$ algorithm.
