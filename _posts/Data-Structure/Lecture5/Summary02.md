@@ -84,16 +84,18 @@ title: "Asymptotic Analysis_02"
     - $f(n)=O(g(n))$ if and only if $g(n)=\Omega(f(n))$
     - $f(n)=o(g(n))$ if and only if $g(n)=\omega(f(n))$
 ## Notations Defined with Limit
+---
   | $f(n)=o(g(n))$ | $\lim_{n\rightarrow \infty}\frac{f(n)}{g(n)} =0$ |
   | $f(n)=O(g(n))$ | $\lim_{n\rightarrow \infty}\frac{f(n)}{g(n)} < \infty$ |
   | $f(n)=\Theta(g(n))$ | $0<\lim_{n\rightarrow \infty}\frac{f(n)}{g(n)} < \infty$ |
   | $f(n)=\Omega(g(n))$ | $\lim_{n\rightarrow \infty}\frac{f(n)}{g(n)} > 0$ |
   | $f(n)=\omega(g(n))$ | $\lim_{n\rightarrow \infty}\frac{f(n)}{g(n)} = \infty$ |
-  
+---  
   ![relations](_posts/Data-Structure/Lecture5/relations.png)
   
 ## Common Classes
 - The most common classes are given names:
+---
   | $\Theta(1)$ | constant |
   | $\Theta(lg(n))$ | logarithmic |
   | $\Theta(n)$ | linear |
@@ -101,6 +103,7 @@ title: "Asymptotic Analysis_02"
   | $\Theta(n^2)$ | quadratic |
   | $\Theta(n^3)$ | cubic |
   | $2^n, e^n, 4^n, ... | exponential |
+---
 ## Weak Ordering
 ![worder](\worder.png)
 ## Algorithm Analysis
