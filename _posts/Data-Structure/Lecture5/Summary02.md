@@ -84,6 +84,7 @@ title: "Asymptotic Analysis_02"
     - $f(n)=O(g(n))$ if and only if $g(n)=\Omega(f(n))$
     - $f(n)=o(g(n))$ if and only if $g(n)=\omega(f(n))$
 ## Notations Defined with Limit
+ | notations | limit |
   |-------------|--------------------------|
   | $f(n)=o(g(n))$ | $\lim_{n\rightarrow \infty}\frac{f(n)}{g(n)} =0$ |
   | $f(n)=O(g(n))$ | $\lim_{n\rightarrow \infty}\frac{f(n)}{g(n)} < \infty$ |
