@@ -4,11 +4,10 @@ description: "Blog on C S"
 show_downloads: true
 google_analytics: 
 theme: hacker
+
+# Conversion
 markdown: kramdown
 highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
 
 # Markdown Processing
 kramdown:
