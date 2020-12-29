@@ -1,7 +1,7 @@
 ---
-layout: default
-title: "Asymptotic Analysis_02"
+ 
 ---
+# "Asymptotic Analysis_02"
 ## $\Theta$ - Notation
   - $\Theta$ - Notation (theta)
     - A function $f(n)=\Theta(g(n))$ if there exist positive constants $n_{0}, n_{1}$, and $n_{2}$ such that
@@ -114,7 +114,7 @@ title: "Asymptotic Analysis_02"
   - We will consider such algorithms to be _efficient_
 - Problems that have no known polynoimal-time algorithms are said to be intractable
   - e.g.: Travelling salesman problem (TSP)
-    -Best run-time: $\Theta(n^{2}2^{n})$
+    - Best run-time: $\Theta(n^{2}2^{n})$
 
 **source**
 "K-MOOC 허재필 교수님의 <인공지능을 위한 알고리즘과 자료구조: 이론, 코딩, 그리고 컴퓨팅 사고>
