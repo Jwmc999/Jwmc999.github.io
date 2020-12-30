@@ -3,7 +3,7 @@ title: "Data Journey"
 description: "Blog on C S"
 show_downloads: true
 google_analytics: 
-theme: hacker
+theme: 'jekyll-theme-hacker', '~> 0.1.0'
 
 # Where things are
 source              : .
