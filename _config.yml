@@ -2,7 +2,7 @@
 title: "Data Journey"
 description: "Blog on C S"
 show_downloads: true
-google_analytics: 
+google_analytics:
 remote_theme: pages-themes/hacker
 
 # Where things are
@@ -36,13 +36,13 @@ unpublished         : false
 
 # Plugins
 whitelist           : []
-plugins             : 
+plugins             :
   - jekyll-feed
   - jekyll-gist
   - jekyll-include-cache
   - jekyll-seo-tag
   - jekyll-sitemap
-  
+
 # Conversion
 markdown            : kramdown
 highlighter         : rouge
@@ -75,11 +75,14 @@ liquid:
 kramdown:
   auto_ids          : true
   entity_output     : as_char
-  toc_levels        : [1, 2, 3, 4, 5, 6]
+  toc_levels        : 1, 2, 3, 4, 5, 6
   smart_quotes      : lsquo,rsquo,ldquo,rdquo
   input             : GFM
   hard_wrap         : false
   footnote_nr       : 1
   show_warnings     : false
   math_engine: mathjax
+    math_engine_opts:
+      preview: true
+      preview_as_code: true
   syntax_highlighter: rouge
