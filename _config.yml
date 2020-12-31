@@ -1,5 +1,6 @@
 # Settings
 title: "Data Journey"
+author: Mervyn
 description: "Blog on C S"
 show_downloads: true
 google_analytics:
@@ -13,10 +14,10 @@ plugins_dir         : _plugins # takes an array of strings and loads plugins in 
 layouts_dir         : _layouts
 data_dir            : _data
 includes_dir        : _includes
-sass:
+sass :
   sass_dir: _sass
-collections:
-  posts:
+collections :
+  posts :
     output          : true
 
 # Handling Reading
@@ -54,7 +55,8 @@ incremental         : false
 detach              : false
 port                : 4000
 host                : 127.0.0.1
-baseurl             : "" # does not include hostname
+url                 : https://Jwmc999.github.io
+baseurl             : //Jwmc999.github.io # does not include hostname
 show_dir_listing    : false
 
 # Outputting
@@ -75,12 +77,12 @@ liquid:
 kramdown:
   auto_ids          : true
   entity_output     : as_char
-  toc_levels        : 1, 2, 3, 4, 5, 6
+  toc_levels        : [1, 2, 3, 4, 5, 6]
   smart_quotes      : lsquo,rsquo,ldquo,rdquo
   input             : GFM
   hard_wrap         : false
-  footnote_nr       : 1
   show_warnings     : false
-  math_engine: mathjax
-  #  math_engine_opts: {}
+  footnote_nr       : 1
   syntax_highlighter: rouge
+  math_engine:  mathjax
+  math_engine_opts: {}
