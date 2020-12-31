@@ -82,7 +82,5 @@ kramdown:
   footnote_nr       : 1
   show_warnings     : false
   math_engine: mathjax
-    math_engine_opts:
-      preview: true
-      preview_as_code: true
+    math_engine_opts: {}
   syntax_highlighter: rouge
