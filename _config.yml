@@ -55,8 +55,7 @@ incremental         : false
 detach              : false
 port                : 4000
 host                : 127.0.0.1
-url                 : https://Jwmc999.github.io
-baseurl             : //Jwmc999.github.io # does not include hostname
+baseurl             : "" # does not include hostname
 show_dir_listing    : false
 
 # Outputting
