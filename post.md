@@ -2,7 +2,7 @@
 layout: default
 ---
 # Blog Post
-* [Prologue](./_posts/Prologue.md)
+* [Prologue](https://github.com/Jwmc999/Jwmc999.github.io/_posts/Prologue.md)
 
 # Journey Codes
 * [Data Structure (DS)](./_posts/Data-Structure)
