@@ -3,7 +3,7 @@ AllCops:
     - _site/**/*
   NewCops: enable
 
-Metrics/LineLength:
+Layout/LineLength:
   Enabled: false
 
 Gemspec/RequiredRubyVersion:
