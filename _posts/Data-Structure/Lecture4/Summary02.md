@@ -20,9 +20,9 @@ class Graph
 {
 public:
   int nV, nE;
-  
+
   vector<int> *edges;
-  
+
   void Init(const char *_filename)
   {
     FILE *input = fopen(_filename, "r");
@@ -38,9 +38,9 @@ public:
         y = b-'A';
         edges[x].push_back(y);
     }
-    fclose(input); 
+    fclose(input);
   }
-  
+
 };
 
 void BFS(Graph &_g, int_stIdx=0)
@@ -50,17 +50,17 @@ void BFS(Graph &_g, int_stIdx=0)
   {
     visit[i] = false;
   }
-  
+
   queue<int> q;
   q.push(_stIdx);
   visit[_stIdx]= true;
-  
+
   while(!q.empty())
   {
     int x = q.front();
     q.pop();
     printf("%c ", x+'A');
-    
+
     for(int i=0;i<_g.edges[x].size(); i++)
     {
       if(!visit[_g.edges[x][i]])
@@ -90,7 +90,7 @@ bool *visit = new bool [_g.nV];
     int x = s.top();
     s.pop();
     printf("%c ", x+'A');
-    
+
     //To order alphabetically, for(int i=_g.edges[x].size() - 1; i>=0; i--)
     for(int i=0;i<_g.edges[x].size(); i++)
     {
@@ -108,18 +108,18 @@ int main(int argc, char **argv)
 {
   Graph g;
   g.Init( argv[1] );
-  
+
   printf("\n");
   printf("BFS: ");
   BFS( g );
   printf("\n");
   printf("\n");
-  
+
   printf("DFS: ");
   DFS( g );
   printf("\n");
-  
-  
+
+
   return 1;
 }
 ```

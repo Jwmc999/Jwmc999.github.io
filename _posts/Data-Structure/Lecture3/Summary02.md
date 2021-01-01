@@ -76,7 +76,7 @@ $$
 ![connected](/_posts/Data-Structure/Lecture3/connected.png)
 
 - Two vertices $v_{i}$, $v_{j}$ are said to be _connected_ if there exists a path from $v_{i}$ to $v_{j}$
-- A grapth is connected if there exists a path between any two vertices
+- A graph is connected if there exists a path between any two vertices
 ### Weighted Graphs
 ![weight](/_posts/Data-Structure/Lecture3/weight.png)
 
@@ -108,7 +108,7 @@ $$
   - The number of trees is $|V| - |E|$
   - Removing any one edge adds one more tree to the forest
 - Here is a forest with 22 vertices and 18 edges
-  
+
   ![forest](/_posts/Data-Structure/Lecture3/forest.png)
   - There are four trees
 ---------------------------------------------------------------------------------------------------
@@ -127,7 +127,7 @@ $$
 ### In and Out Degrees
 - The degree of a vertex must be modified to consider both cases:
   - The _out-degree_ of a vertex is the number of vertices which are adjacent to the given vertex
-  - The _in-degree_ of a vertex is the number of vertices which this vertex is adjacent to 
+  - The _in-degree_ of a vertex is the number of vertices which this vertex is adjacent to
 - In this graph:(needs to be updated)
   in_degree($v_{1}$) = 0 | out_degree($v_{1}$) = 2
   in_degree($v_{5}$) = 2 | out_degree($v_{5}$) = 3
@@ -140,9 +140,9 @@ $$
   - Sinks: $v_{2}$, $v_{7}$
 ### Paths
 - A path in a directed graph is an ordered sequence or vertices
-     $$\left \( v_{1}, v_{2}, ..., v_{k} \right \)$$ 
+     $$\left \( v_{1}, v_{2}, ..., v_{k} \right \)$$
   where ${ v_{j-1}, v_{j}}$ is an edge for _j = l, ..., k_
-- A path of length 5 in this graph is 
+- A path of length 5 in this graph is
  $$\left \( v_{1}, v_{4}, v_{5}, v_{3}, v_{5}, v_{2} \right \)$$
 - A simple cycle of length 3 is
 $$\left \( v_{8}, v_{4}, v_{5}, v_{8} \right \)$$
@@ -172,25 +172,25 @@ $$\left \( v_{8}, v_{4}, v_{5}, v_{8} \right \)$$
   - Adjacency matrix
   - Adjacency list
 ## Binary-Relation List
-- The most inefficient is a relation list: 
+- The most inefficient is a relation list:
   - A container storing the edges
   - Requires $Theta(|E|)$ memory
   - Determining if $v_{j}$ is adjacent to $v_{k}$ is $Theta(|E|)$
   - Finding all neighbors of $v_{j}$ is $Theta(|E|)$
 ## Adjacency Matrix
 - Requiring more memory but also faster, an adjacency matrix
-  - The matrix entry (_j_, _k_) is set to **true** if there is an edge $( v_{j}, v_{k})$ 
+  - The matrix entry (_j_, _k_) is set to **true** if there is an edge $( v_{j}, v_{k})$
   - Requires $Theta(|V|^{2})$ memory
   - Determining if $v_{j}$ is adjacent to $v_{k}$ is $Theta(1)$
   - Finding all neighbors of $v_{j}$ is $Theta(|V|)$
   - Most efficient for existence of an edge between $v_{j}$ and $v_{k}$
 - Adjacency matrix of a weighted graph:
   - Put the weight value to the cell
-  
+
   ![adjmatrix](/_posts/Data-Structure/Lecture3/adjmat.png)
 ## Adjacency List
 - Most efficient for algorithms is an adjacency list
   - Each vertex is associated with a list of its neighbors
   - Requires $Theta(|V|+|E|)$ memory
- 
+
    ![adjlist](/_posts/Data-Structure/Lecture3/adjlist.png)

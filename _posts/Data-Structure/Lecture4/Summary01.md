@@ -2,7 +2,7 @@
 layout: post
 title: "DFS and BFS"
 ---
-# Grap Traversal
+# Graph Traversal
 - Process to visit nodes in a graph.
 - Traversals of graphs are also called searches.
 - How to perform the traversal?
@@ -45,7 +45,7 @@ title: "DFS and BFS"
 - This continues until the stack is empty
   - Note: if there are no unvisited vertices, the graph is connected.
 #### Example
-- Performing a deapth-first search with a stack
+- Performing a depth-first search with a stack
   - Push A
   - Pop A and push B, C, and E
   - Pop E and push G and H
@@ -56,15 +56,15 @@ title: "DFS and BFS"
   - Pop F
   - Pop D
   - Pop B
-  The stack is empty: we are done. 
+  The stack is empty: we are done.
   (A, E, H, I, G, C, F, D, B)
 - DFS ordering is not necessarily unique.
   - e.g.: order to push neighbors to stack could be (A, B, D, C, F, E, G, I, H)
 ## Connected Components
 - To identify connected components in a graph:
-  - Perfom DFS or BFS.
-  - Check whether all the vertices are visited or not. 
-  - If not, perform DFS or BFS from one of unvisited vertices until all the vertices are marked as visited. 
-  
+  - Perform DFS or BFS.
+  - Check whether all the vertices are visited or not.
+  - If not, perform DFS or BFS from one of unvisited vertices until all the vertices are marked as visited.
+
 **source**
 "K-MOOC 허재필 교수님의 <인공지능을 위한 알고리즘과 자료구조: 이론, 코딩, 그리고 컴퓨팅 사고> 강좌의 4-1 그래프 탐색: DFS와 BFS 중(http://www.kmooc.kr/courses/course-v1:SKKUk+SKKU_46+2020_T1)"
