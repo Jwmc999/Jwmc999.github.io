@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Data Structure/Algorithm_01"
+date: 2020-12-18 14:00 +0900
 ---
-**Course Objectives** 
+**Course Objectives**
 - Discuss key data structures and algorithms essential for solving problems with computers
 - (Powerful) Programming skills
   - Translate your idea into languages that computers can understand
@@ -14,12 +15,12 @@ title: "Data Structure/Algorithm_01"
 - "How to think like a computer scientist"
 
 **Summary**
-- Definitions and examples of 
+- Definitions and examples of
 Data structures
 Algorithms
 
 # Data Structures
-## Data Structure is a collection of 
+## Data Structure is a collection of
 - Data values
 - Relationships among data values
 - Operations that can be applied to the data
@@ -28,13 +29,13 @@ Algorithms
 ## Fundamental data structures
 | Primitive | Non-Primitive |
 |----------|-------|
-| Interger, Float, Character | Linear, Non-Linear, Files |
+| Integer, Float, Character | Linear, Non-Linear, Files |
 
 | Linear  | Non-Linear|
 |-------|----|
 |Arrays, Lists | Trees, Graphs|
 
-|Lists| 
+|Lists|
 |------|
 |Stacks, Queues|
 

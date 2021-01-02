@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Data Structure/Algorithm_02"
+date: 2020-12-18 17:00 +0900
 ---
 
 # Topics
@@ -8,7 +9,7 @@ title: "Data Structure/Algorithm_02"
 - Array, list, stack, queue, heap, tree, and graph
 - Graph traversal algorithms: DFS and BFS
 ## Algorithm analysis
-- Asympotic notations and analysis
+- Asymptotic notations and analysis
 - Time and space complexities
 ## Fundamental algorithms:
 - Sorting
@@ -23,7 +24,7 @@ title: "Data Structure/Algorithm_02"
 - Tree
 - Graph
 # Algorithm Analysis
-## Suppose that we have two algorithms. 
+## Suppose that we have two algorithms.
 As a computer scientist, how can you tell which is better?
 - Insertion sort vs merge sort
 - Merge sort vs quicksort
@@ -31,7 +32,7 @@ As a computer scientist, how can you tell which is better?
 - Time/space complexities
 - Weak ordering
 ### Shortest Path
-- A path between two nodes in a graph such that the sum of weights of its constituent edges is minimized. 
+- A path between two nodes in a graph such that the sum of weights of its constituent edges is minimized.
 ### Minimum Spanning Tree
 ### Topological Sort and Critical Path
 ### Dynamic Programming
@@ -39,3 +40,7 @@ As a computer scientist, how can you tell which is better?
 - A largest set of non-overlapping intervals
 ### Edit distance
 ### Matrix chain multiplication
+
+**source**
+"K-MOOC 허재필 교수님의 <인공지능을 위한 알고리즘과 자료구조: 이론, 코딩, 그리고 컴퓨팅 사고>
+강좌의 1-2 강좌의 목표와 실습 환경 중(http://www.kmooc.kr/courses/course-v1:SKKUk+SKKU_46+2020_T1)"
