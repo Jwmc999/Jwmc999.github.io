@@ -2,7 +2,7 @@
 layout: default
 ---
 # Blog Post
-* [Prologue]({% link _/Prologue.md %})
+* [Prologue]({% link /Prologue.md %})
 
 # Journey Codes
 * [Data Structure (DS)]({% link _posts/Data-Structure/about.md %})
