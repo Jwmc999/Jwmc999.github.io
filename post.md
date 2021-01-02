@@ -2,9 +2,9 @@
 layout: default
 ---
 # Blog Post
-* [Prologue]({% link /Prologue.md %})
+* [Prologue]({% link _/Prologue.md %})
 
 # Journey Codes
-* [Data Structure (DS)]({% link Data-Structure/about.md %})
-* [C Language (C)]({% link C-Language/about.md %})
-* [Discrete Mathematics (M)]({% link Discrete-Mathematics/about.md %})
+* [Data Structure (DS)]({% link _posts/Data-Structure/about.md %})
+* [C Language (C)]({% link _posts/C-Language/about.md %})
+* [Discrete Mathematics (M)]({% link _posts/Discrete-Mathematics/about.md %})

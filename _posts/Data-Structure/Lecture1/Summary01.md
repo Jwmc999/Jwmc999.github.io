@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Data Structure/Algorithm_01"
-date: 2020-12-18 14:00 +0900
+date: 2020-12-18
 ---
 **Course Objectives**
 - Discuss key data structures and algorithms essential for solving problems with computers

@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: default
 title: "Data Structure"
-date: 2021-01-02 16:03 +0900
+date: 2021-01-02
 ---
 # Introduction
 
 # Lecture1
-- [Summary01]({% post_url 2020-12-18T14:00+0900-Summary01 %})
+- [Summary01]({% link _posts/Data-Structure/Lecture1/Summary01.md %})
