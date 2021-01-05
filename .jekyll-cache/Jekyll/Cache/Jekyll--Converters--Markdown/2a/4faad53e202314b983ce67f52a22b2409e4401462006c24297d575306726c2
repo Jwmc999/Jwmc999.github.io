@@ -1,0 +1,10 @@
+I"g<h1 id="blog-post">Blog Post</h1>
+<ul>
+  <li><a href="./_posts/Prologue.md">Prologue</a>
+    <h1 id="journey-codes">Journey Codes</h1>
+  </li>
+  <li><a href="./_posts/Data-Structure">Data Structure (DS)</a></li>
+  <li><a href="./_posts/C-Language">C Language (C)</a></li>
+  <li><a href="{./_posts/Discrete-Mathematics">Discrete Mathematics (M)</a></li>
+</ul>
+:ET
