@@ -6,11 +6,11 @@ gemspec
 
 gem 'github-pages', group: :jekyll_plugins
 
-gem 'jekyll', '~>4.0'
+gem 'jekyll', '>=4.0'
 gem 'jekyll-feed'
 gem 'jekyll-gist'
 gem 'jekyll-include-cache'
-gem 'jekyll-remote-theme'
+gem 'jekyll-remote-theme', '~> 2.0'
 gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
 gem 'kramdown'
