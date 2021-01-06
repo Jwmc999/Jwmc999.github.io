@@ -1,8 +1,8 @@
 ---
-layout:
+layout: default
 title: "Find Largest Element"
 ---
-# Dymamic Memory: Largest Element
+# Dymamic Memory
 The code provided calculates the largest element of the array nums and outputs it.
 Complete the code to declare the nums array and take the array elements as input.
 The array can be of any variable size, so the first input should be the size of the array, followed by its elements.
@@ -29,7 +29,7 @@ int main() {
     //your code goes here
     int *nums= NULL;
     nums= new int[n];
-
+    //
     int max = nums[0];
     for(int i=0; i<n; i++) {
         cin>>nums[i];
