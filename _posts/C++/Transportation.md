@@ -1,6 +1,6 @@
 ---
 layout: default
-Title: "Empty seets"
+Title: "Empty seats"
 ---
 # Number of Empty Seats
 You are making a program for a bus service. 
