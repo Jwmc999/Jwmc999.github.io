@@ -1,4 +1,4 @@
-I"Î<h1 id="data-journey">Data Journey</h1>
+I"Í<h1 id="data-journey">Data Journey</h1>
 
 <p><img src="thumbnail.png" alt="Thumbnail of Hacker" /></p>
 
@@ -7,5 +7,5 @@
 Explore essential courses for a programmer, while searching various careers for C S major graduates.
 (*Since I am a newbie, I referenced and quoted codes from Jekyll Hacker theme.)</p>
 
-<h2 id="posts"><a href="post.md">Posts</a></h2>
+<h2 id="posts"><a href="/post/">Posts</a></h2>
 :ET

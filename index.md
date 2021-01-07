@@ -10,4 +10,4 @@ Welcome to _Data Journey_, a log about adventure to be a successful computer pro
 Explore essential courses for a programmer, while searching various careers for C S major graduates.
 (*Since I am a newbie, I referenced and quoted codes from Jekyll Hacker theme.)
 
-## [Posts](post.md)
+## [Posts]({% link post.md %})

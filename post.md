@@ -5,6 +5,8 @@ layout: default
 * [Prologue]({% link Prologue.md %})
 
 # Journey Codes
-* [Data Structure (DS)]({% link Data-Structure-about.md %})
-* [C Language (C)]({% link C-Language-about.md %})
-* [Discrete Mathematics (M)]({% link Discrete-Mathematics-about.md %})
+* [Data Structure (DS)]()
+* [C Language (C)]()
+* [Discrete Mathematics (M)]()
+
+[back]({% link index.md %})
