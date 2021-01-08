@@ -9,4 +9,4 @@ layout: default
 * [C Language (C)]()
 * [Discrete Mathematics (M)]()
 
-[back]({% link index.md %})
+[back]({% link /index.md %})
