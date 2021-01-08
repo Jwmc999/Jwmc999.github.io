@@ -1,0 +1,163 @@
+I"�<h1 id="background">Background</h1>
+<ul>
+  <li>Suppose that we have two algorithms, how can we tell which is better?</li>
+  <li>We could implement both algorithms, run them both
+    <ul>
+      <li>Expensive and error prone</li>
+    </ul>
+  </li>
+  <li>Preferably, we should analyze them mathematically
+    <ul>
+      <li>Algorithm analysis
+        <h2 id="asymptotic-analysis">Asymptotic Analysis</h2>
+      </li>
+    </ul>
+  </li>
+  <li>In general, we will always analyze algorithms with respect to one or more variables</li>
+  <li>Examples with one variable:
+    <ul>
+      <li>The number of items <em>n</em> currently stored in an array or other data structure</li>
+      <li>The number of items expected to be stored in an array or other data structure</li>
+      <li>The dimensions of an $n\times n$ matrix</li>
+    </ul>
+  </li>
+  <li>Examples with multiple variables:
+    <ul>
+      <li>Dealing with <em>n</em> objects stored in <em>m</em> memory locations</li>
+      <li>Multiplying a $k\times m$ and an $m\times n$ matrix</li>
+      <li>Dealing with sparse matrices of size $n\times n$ with <em>m</em> non-zero entries
+        <h2 id="linear-and-binary-search">Linear and Binary Search</h2>
+      </li>
+      <li>There are other algorithms which are significantly faster as the problem size increases</li>
+      <li>This plot shows maximum and average number of comparisons to find an entry in a sorted array of size <em>n</em>
+        <ul>
+          <li>Linear search</li>
+          <li>Binary search</li>
+        </ul>
+      </li>
+      <li>Given an algorithm:
+        <ul>
+          <li>We need to be able to describe these values (e.g. the number of comparisons) mathematically</li>
+          <li>We need a systematic tool of using the description of the algorithm together with the properties of an associated data structure</li>
+          <li>We need to do this in a machine-independent way
+            <h2 id="quadratic-growth">Quadratic Growth</h2>
+          </li>
+        </ul>
+      </li>
+      <li>Consider the two functions
+        <ul>
+          <li>$f(n)=n^2$</li>
+          <li>$g(n)=n^2-3n+2$</li>
+        </ul>
+      </li>
+      <li>Around <em>n=0</em>, they look very different</li>
+      <li>Around <em>n=1000</em>, they seem not much different</li>
+      <li>The absolute difference is large, for example,
+        <ul>
+          <li>$f(1000)=1,000,000$</li>
+          <li>$g(1000)= 997,002$</li>
+        </ul>
+      </li>
+      <li>But the relative difference is very small
+        <ul>
+          <li>
+            <table>
+              <tbody>
+                <tr>
+                  <td>$\left</td>
+                  <td>\frac{f(1000)-g(1000)}{f(1000)} \right</td>
+                  <td>$ = 0.002998 &lt; 0.3%</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+      </li>
+      <li>This difference goes to zero as $n\rightarrow \infty$
+        <ul>
+          <li>$\lim_{n\rightarrow \infty }\left | \frac{f(n)-g(n)}{f(n)} \right |$=0
+            <h2 id="polynomial-growth">Polynomial Growth</h2>
+          </li>
+        </ul>
+      </li>
+      <li>To demonstrate with another example,</li>
+      <li>$f(n)=n^6$</li>
+      <li>$g(n)=n^6-23n^5+193n^4-729n^3+1206n^2-648n</li>
+      <li>Around <em>n=0</em>, they are very different</li>
+      <li>Still, around <em>n=1000</em>, the relative difference is less than 3%</li>
+      <li>if $n\rightarrow \infty$, this difference would go to zero.</li>
+      <li>The justification for both pairs of polynomials being similar is that, in both cases, they each had the same leading term:
+        <ul>
+          <li>$n^2$ in the first case, $n^6$ in the second</li>
+        </ul>
+      </li>
+      <li>However, coefficients of the leading terms were different
+        <ul>
+          <li>In this case, both functions would exhibit the same rate of growth, however, one would always be proportionally larger
+            <h2 id="counting-instructions">Counting Instructions</h2>
+          </li>
+        </ul>
+      </li>
+      <li>Suppose that we had two algorithms which sorted a list of size <em>n</em> and the runtime (in the number of instructions) is given by:
+        <ul>
+          <li>$b_{worst}(n)=4.7n^2-0.5n+5$</li>
+          <li>$b_{best}(n)=3.8n^2+0.5n+5$</li>
+          <li>$s(n)=4n^2+14n+12$</li>
+        </ul>
+      </li>
+      <li>The smaller the value <em>n</em>, the fewer instructions are run
+        <ul>
+          <li>For $n\leq 21, b_{worst}(n)&lt; s(n)$</li>
+          <li>For $n\geq 22, b_{worst}(n)&lt; s(n)$</li>
+        </ul>
+      </li>
+      <li>With small values of <em>n</em>, the algorithm described by <em>s(n)</em> requires more instructions than even the $b_{worst}(n)$</li>
+      <li>Near $n = 1000, b_{worst}(n)\approx 1.175 s(n)$ and $b_{best}(n)\approx 0.95 s(n)$</li>
+    </ul>
+
+    <p><img src="/_posts/Data-Structure/Lecture5/countins.png" alt="countins" /></p>
+
+    <ul>
+      <li>Is this a serious difference between these two algorithms?</li>
+      <li>Because we can count the number instructions, we can also estimate how mush time is required to run one of these algorithms on a computer.</li>
+      <li>Suppose that we have a 1GHz computer,
+        <ul>
+          <li>The time (s) required to sort a list with 1 million elements, it will take about 1 second.</li>
+        </ul>
+      </li>
+      <li>If $f(n)=a_{k}n^k+a_{k-1}n^{k-1}+…$ and $g(n)=b_{k}n^k+b_{k-1}n^{k-1}+… ($a_{k}\neq 0, b_{k}\neq 0$)
+        <ul>
+          <li>For large enough <em>n</em>, it will always be true that
+\(f(n) &lt; Mg(n)\)
+where, we choose
+\(M =\frac{a_k}{b_k} + 1\)</li>
+          <li>In this case, we only need a computer which is <em>M</em> times faster.</li>
+        </ul>
+      </li>
+      <li>Unlike coefficient, the difference of polynomial cannot be covered by using a faster computer.
+        <h2 id="weak-ordering">Weak Ordering</h2>
+      </li>
+    </ul>
+  </li>
+  <li>Consider the following definitions:</li>
+  <li>We will consider two functions to be equivalent, $f\sim g$, if
+  \(\lim_{n \rightarrow \infty}\frac{f(n)}{g(n)}=c\) where, $0 &lt; c &lt;\infty$</li>
+  <li>We will state that $f&lt;g$ if $\lim_{n \rightarrow \infty}\frac{f(n)}{g(n)}=0$</li>
+  <li>These define a weak ordering</li>
+  <li>Place $n$ and $n^2$ in the same line</li>
+  <li>Let $f(n)$ and $g(n)$ describe either the run-time of two algorithms</li>
+  <li>If $f(n)\sim g(n)$, then it is always possible to improve the performance of one function over the other by purchasing a faster computer</li>
+  <li>If $f(n) &lt; g(n)$, then you can never purchase a computer fast enough so that the second function always runs in less time than the first
+    <ul>
+      <li>In other words, you can firmly say f(n) is more efficient than g(n)</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>source</strong>
+“K-MOOC 허재필 교수님의 &lt;인공지능을 위한 알고리즘과 자료구조: 이론, 코딩, 그리고 컴퓨팅 사고&gt;
+강좌의 5-1 함수의 점근적 분석법 중(http://www.kmooc.kr/courses/course-v1:SKKUk+SKKU_46+2020_T1)”</p>
+
+<p><a href="/Lc4/Summary02/">back</a>
+<a href="/Summary02/">next</a></p>
+:ET

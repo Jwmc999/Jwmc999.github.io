@@ -1,0 +1,112 @@
+I"<h1 id="graph-traversal">Graph Traversal</h1>
+<ul>
+  <li>Process to visit nodes in a graph.</li>
+  <li>Traversals of graphs are also called searches.</li>
+  <li>How to perform the traversal?
+    <ul>
+      <li>Breadth-first search (BFS)</li>
+      <li>Depth-first search (DFS)
+        <h2 id="breadth-first-search-bfs">Breadth-First Search (BFS)</h2>
+      </li>
+    </ul>
+  </li>
+  <li>Algorithm description
+    <ul>
+      <li>Choose any vertex, mark it as visited and push it onto queue.</li>
+      <li>While the queue is not empty:
+        <ul>
+          <li>Pop a vertex <em>v</em> from the queue</li>
+          <li>For each vertex adjacent to <em>v</em> that has not been visited:
+            <ul>
+              <li>Mark it visited, and</li>
+              <li>Push it onto the queue</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>This continues until the queue is empty</li>
+  <li>Note: if there are no unvisited vertices, the graph is connected.
+    <h4 id="example">Example</h4>
+    <p><img src="/bfs.png" alt="BFS" /></p>
+  </li>
+  <li>Performing a breadth-first traversal with a queue
+    <ul>
+      <li>Push the first vertex onto the queue</li>
+      <li>Pop A and push B, C and E</li>
+      <li>Pop B and push D</li>
+      <li>Pop C and push F</li>
+      <li>Pop E and push G and H</li>
+      <li>Pop D</li>
+      <li>Pop F</li>
+      <li>Pop G and push I</li>
+      <li>Pop H</li>
+      <li>Pop I
+The queue is empty: we are done.
+(A, B, C, E, D, F, G, H, I)
+        <h2 id="depth-first-search-dfs">Depth-First Search (DFS)</h2>
+      </li>
+    </ul>
+  </li>
+  <li>Algorithm description:
+    <ul>
+      <li>Choose any vertex, mark it as visited and push it onto stack.</li>
+      <li>While the stack is not empty:
+        <ul>
+          <li>Pop a vertex <em>v</em> from the stack</li>
+          <li>For each vertex adjacent to <em>v</em> that has not been visited:
+            <ul>
+              <li>Mark it visited, and</li>
+              <li>Push it onto the stack</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>This continues until the stack is empty
+    <ul>
+      <li>Note: if there are no unvisited vertices, the graph is connected.
+        <h4 id="example-1">Example</h4>
+      </li>
+    </ul>
+  </li>
+  <li>Performing a depth-first search with a stack
+    <ul>
+      <li>Push A</li>
+      <li>Pop A and push B, C, and E</li>
+      <li>Pop E and push G and H</li>
+      <li>Pop H and push I</li>
+      <li>Pop I</li>
+      <li>Pop G</li>
+      <li>Pop C and push D and F</li>
+      <li>Pop F</li>
+      <li>Pop D</li>
+      <li>Pop B
+The stack is empty: we are done.
+(A, E, H, I, G, C, F, D, B)</li>
+    </ul>
+  </li>
+  <li>DFS ordering is not necessarily unique.
+    <ul>
+      <li>e.g.: order to push neighbors to stack could be (A, B, D, C, F, E, G, I, H)
+        <h2 id="connected-components">Connected Components</h2>
+      </li>
+    </ul>
+  </li>
+  <li>To identify connected components in a graph:
+    <ul>
+      <li>Perform DFS or BFS.</li>
+      <li>Check whether all the vertices are visited or not.</li>
+      <li>If not, perform DFS or BFS from one of unvisited vertices until all the vertices are marked as visited.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>source</strong>
+“K-MOOC 허재필 교수님의 &lt;인공지능을 위한 알고리즘과 자료구조: 이론, 코딩, 그리고 컴퓨팅 사고&gt; 강좌의 4-1 그래프 탐색: DFS와 BFS 중(http://www.kmooc.kr/courses/course-v1:SKKUk+SKKU_46+2020_T1)”</p>
+
+<p><a href="/Summary02/">back</a>
+<a href="/Summary02/">next</a></p>
+:ET

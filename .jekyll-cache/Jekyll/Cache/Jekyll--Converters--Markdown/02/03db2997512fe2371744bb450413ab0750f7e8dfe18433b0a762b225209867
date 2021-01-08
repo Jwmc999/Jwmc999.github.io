@@ -1,0 +1,85 @@
+I"y<h1 id="stack">Stack</h1>
+<ul>
+  <li>A collection of elements that are inserted and removed according to the <strong>last-in first-out (LIFO)</strong> orders
+    <ul>
+      <li>The lastly inserted element will be removed firstly.</li>
+      <li>Insertion and removal are only available at the <strong>top</strong> of stack.
+        <h3 id="stack-terminologies">Stack: Terminologies</h3>
+      </li>
+    </ul>
+  </li>
+  <li>Top: the top of a stack</li>
+  <li>Push: Insert an item on the top of stack</li>
+  <li>Pop: Remove the item on the top of stack
+    <h3 id="parenthesis-matching">Parenthesis Matching</h3>
+  </li>
+  <li>Problem
+    <ul>
+      <li>Check if each opening parenthesis has a corresponding closing one.
+        <h4 id="example">Example:</h4>
+      </li>
+    </ul>
+  </li>
+  <li>Balanced: (()()()), (((()))), (()((())()))</li>
+  <li>Unbalanced: (((((()), ())), (()()(()
+    <h3 id="parenthesis-matching-with-stack">Parenthesis Matching with Stack</h3>
+  </li>
+  <li>Push all the open symbols to a stack.</li>
+  <li>Each finding of a close symbol, pop an open symbol from the stack and match them.
+    <ul>
+      <li>If the stack is empty, the statement is not balanced.</li>
+    </ul>
+  </li>
+  <li>Once processing all the parenthesis, check the status of the stack:
+    <ul>
+      <li>If the stack is empty: it is balanced</li>
+      <li>Otherwise, not balanced.
+        <h4 id="example-">Example: ((()()))</h4>
+        <hr />
+        <h1 id="queue">Queue</h1>
+      </li>
+    </ul>
+  </li>
+  <li>A collection of elements that are inserted and removed according to the <strong>first-in first-out (FIFO)</strong> orders.
+    <ul>
+      <li>The firstly inserted element will be firstly removed.</li>
+      <li>All insertions are made at the position called rear (back, tail).</li>
+      <li>All deletions are made at the position called front (head).
+        <h3 id="queue-terminologies">Queue: Terminologies</h3>
+      </li>
+    </ul>
+  </li>
+  <li>Front (head): the front of queue where deletions occur.</li>
+  <li>Rear (back, tail): the rear of queue where insertions occur.</li>
+  <li>Enqueue: insert an item at the rear.</li>
+  <li>Dequeue: delete the item at the front.
+    <h3 id="linear-queue">Linear Queue</h3>
+  </li>
+  <li>Problem: We cannot add anymore although we have empty spaces.
+    <h3 id="circular-queue">Circular Queue</h3>
+  </li>
+  <li>A queue with cyclic rear and front indices to fully utilize the space.
+    <h1 id="stl-standard-template-library">STL (Standard Template Library)</h1>
+  </li>
+  <li>A software library for the C++ programming language.</li>
+  <li>STL provides a set of common container classes:
+    <ul>
+      <li>pair, array, vector, list, …</li>
+      <li>queue, stack, priority queue, …</li>
+      <li>set, map, …</li>
+    </ul>
+  </li>
+  <li>STL provides a large number of algorithms:
+    <ul>
+      <li>sort, binary search, …
+        <h1 id="palindrome-check">Palindrome Check</h1>
+      </li>
+    </ul>
+  </li>
+  <li>A palindrome is a sequence of characters which reads the same backward as forward. (e.g.: radar, rotator, level)
+```c
+#include <cstring>
+#include <stack>
+#include <queue></queue></stack></cstring></li>
+</ul>
+:ET

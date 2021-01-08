@@ -1,0 +1,208 @@
+I"<h1 id="asymptotic-analysis_02">“Asymptotic Analysis_02”</h1>
+<h2 id="theta---notation">$\Theta$ - Notation</h2>
+<ul>
+  <li>$\Theta$ - Notation (theta)
+    <ul>
+      <li>A function $f(n)=\Theta(g(n))$ if there exist positive constants $n_{0}, n_{1}$, and $n_{2}$ such that
+\(0 \leq c_{1}g(n) \leq f(n) \leq c_{2}g(n)\)
+for all $n \geq n_{0}$</li>
+    </ul>
+
+    <p><img src="/_posts/Data-Structure/Lecture5/theta.png" alt="theta" /></p>
+
+    <ul>
+      <li>$f(n)$ has a rate of growth equal to that of $g(n)$</li>
+      <li>$f(n)$ belongs to $\Theta(g(n))$</li>
+      <li>$g(n)$ is an <em><strong>asymptotically tight bound</strong></em> for $f(n)$</li>
+      <li>If $f(n)=\Theta(g(n))$ is a polynomial of degree <em>k</em>, then $f(n)=\Theta(n^k)$</li>
+      <li>Example:
+        <ul>
+          <li>$\frac{1}{2}n^2 - 3n = \Theta (n^2)$
+            <ul>
+              <li>$\frac{1}{14}n^2 \leq \frac{1}{2}n^2 - 3n\leq n^2$, for all $n\geq 7$</li>
+            </ul>
+          </li>
+          <li>$an^2+bn+c=\Theta(n^2)$, when $a&gt;0$
+            <ul>
+              <li>$c_{1}=\frac{a}{4}, c_{2}=\frac{7a}{4}, n_{0}=2 max(\frac{|b|}{a}, \sqrt{\frac{|c|}{a}})$
+                <h2 id="o---notation"><em>O</em> - Notation</h2>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><em>O</em> - Notation (big-oh)
+    <ul>
+      <li>A function $f(n)=\Theta(g(n))$ if there exist positive constants $c$ and $n_{0}$ such that
+ \(0 \leq f(n) \leq cg(n)\)
+ for all $n \geq n_{0}$</li>
+    </ul>
+
+    <p><img src="/_posts/Data-Structure/Lecture5/bigo.png" alt="bigo" /></p>
+
+    <ul>
+      <li>$g(n)$ is an <em><strong>asymptotically upper bound</strong></em> for $f(n)$</li>
+      <li>$f(n)=\Theta(g(n))$ implies $f(n)=O(g(n))$</li>
+      <li>$O$ is suitable to bound the worst-case running time.</li>
+      <li>Example:
+        <ul>
+          <li>$2n^2+8n-2=O(n^2)$</li>
+          <li>$2n^2+8n-2=O(n^3)$</li>
+          <li>$2n^2+8n-2=O(n^4)$</li>
+          <li>$2n^2+8n-2\neq O(n)$
+            <h2 id="omega----notation">$\Omega $ - Notation</h2>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>$\Omega $ - Notation (omega)
+    <ul>
+      <li>A function $f(n)=\Omega(g(n))$ if there exist positive constants $c$ and $n_{0}$ such that
+ \(0 \leq cg(n) \leq f(n)\)
+ for all $n \geq n_{0}$</li>
+    </ul>
+
+    <p><img src="/_posts/Data-Structure/Lecture5/omega.png" alt="omega" /></p>
+
+    <ul>
+      <li>$g(n)$ is an <em><strong>asymptotically lower bound</strong></em> for $f(n)$</li>
+      <li>$f(n)=\Theta(g(n))$ implies $f(n)=\Omega(g(n))$</li>
+      <li>$\Omega$ is suitable to bound the best-case running time.</li>
+      <li>$f(n)=\Theta(g(n))$ <em><strong>if and only if</strong></em> $f(n)=O(g(n))$ and $f(n)=\Omega(g(n))$
+        <h2 id="asymptotic-notation-in-equations-or-inequalities">Asymptotic Notation in Equations (or Inequalities)</h2>
+      </li>
+    </ul>
+  </li>
+  <li>In general, asymptotic notations appeared in equations are interpreted as some anonymous function</li>
+  <li>Examples:
+    <ul>
+      <li>$2n^2+3n+1 = 2n^2+\Theta(n)$</li>
+      <li>$T(n)=2T(\frac{n}{2})+\Theta(n)$
+        <h2 id="o---notation-1"><em>o</em> - Notation</h2>
+      </li>
+    </ul>
+  </li>
+  <li><em>O</em> - notation (big-oh) may or may not be asymptotically tight
+    <ul>
+      <li>$2n^2 =O(n^2)\rightarrow$ asymptotically tight, $2n= O(n^2)\rightarrow$ not tight</li>
+    </ul>
+  </li>
+  <li><em>o</em> - notation (little-oh)
+    <ul>
+      <li>A function $f(n)=o(g(n))$ if there exist a positive constant $n_{2}$ such that
+\(0 \leq f(n) &lt; cg(n)\)
+for all $n \geq n_{0}$ and <em><strong>all constant</strong></em> $c&gt;0$
+        <ul>
+          <li>$g(n)$ is an upper bound of $f(n)$ that is not asymptotically tight</li>
+        </ul>
+      </li>
+      <li>Examples:
+        <ul>
+          <li>$2n=o(n^2)$ but $2n^2\neq o(n^2)$
+            <h2 id="omega---notation">$\omega$ - Notation</h2>
+          </li>
+        </ul>
+      </li>
+      <li>$\omega$ - notation (little-omega)
+        <ul>
+          <li>A function $f(n)=\omega(g(n))$ if there exist a positive constant $n_{0}$ such that
+\(0 \leq cg(n) &lt; f(n)\)
+for all $n &gt; n_{0}$ and <em><strong>all constant</strong></em> $c&gt;0$
+            <ul>
+              <li>$g(n)$ is an lower bound of $f(n)$ that is not asymptotically tight</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Examples:</li>
+      <li>$2n^2=\omega(n)$ but $2n^2\neq \omega(n^2)$</li>
+    </ul>
+  </li>
+  <li>Theta notation and Big-O notation are used most often.
+    <h2 id="properties-of-notations">Properties of Notations</h2>
+    <ul>
+      <li>Transivity
+        <ul>
+          <li>$f(n)=\Theta(g(n))$ and $g(n)=\Theta(h(n))$ imply $f(n)=\Theta(h(n))$</li>
+          <li>It is true for $o, O, \omega, and \Omega$</li>
+        </ul>
+      </li>
+      <li>Reflexivity
+        <ul>
+          <li>$f(n)=\Theta(f(n))$</li>
+          <li>It is true for $O$ and $\Omega$</li>
+        </ul>
+      </li>
+      <li>Symmetry
+        <ul>
+          <li>$f(n)=\Theta(g(n))$ if and only if $g(n)=\Theta(f(n))$</li>
+        </ul>
+      </li>
+      <li>Transpose symmetry
+        <ul>
+          <li>$f(n)=O(g(n))$ if and only if $g(n)=\Omega(f(n))$</li>
+          <li>$f(n)=o(g(n))$ if and only if $g(n)=\omega(f(n))$
+            <h2 id="notations-defined-with-limit">Notations Defined with Limit</h2>
+            <p>| notations | limit |
+|————-|————————–|
+| $f(n)=o(g(n))$ | $\lim_{n\rightarrow \infty}\frac{f(n)}{g(n)} =0$ |
+| $f(n)=O(g(n))$ | $\lim_{n\rightarrow \infty}\frac{f(n)}{g(n)} &lt; \infty$ |
+| $f(n)=\Theta(g(n))$ | $0&lt;\lim_{n\rightarrow \infty}\frac{f(n)}{g(n)} &lt; \infty$ |
+| $f(n)=\Omega(g(n))$ | $\lim_{n\rightarrow \infty}\frac{f(n)}{g(n)} &gt; 0$ |
+| $f(n)=\omega(g(n))$ | $\lim_{n\rightarrow \infty}\frac{f(n)}{g(n)} = \infty$ |</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p><img src="/_posts/Data-Structure/Lecture5/relations.png" alt="relations" /></p>
+  </li>
+</ul>
+
+<h2 id="common-classes">Common Classes</h2>
+<ul>
+  <li>The most common classes are given names:
+| classes | names |
+|————-|————|
+| $\Theta(1)$ | constant |
+| $\Theta(lg(n))$ | logarithmic |
+| $\Theta(n)$ | linear |
+| $\Theta(n lg(n))$ | “<em>n</em> log <em>n</em>” |
+| $\Theta(n^2)$ | quadratic |
+| $\Theta(n^3)$ | cubic |
+| $2^n, e^n, 4^n, … | exponential |
+    <h2 id="weak-ordering">Weak Ordering</h2>
+    <p><img src="/_posts/Data-Structure/Lecture5/worder.png" alt="worder" /></p>
+    <h2 id="algorithm-analysis">Algorithm Analysis</h2>
+  </li>
+  <li>We will use the notations to describe the complexity of algorithms
+    <ul>
+      <li>e.g.: Adding a list of <em>n</em> floats will be said to be a $\Theta(n)$ algorithm.</li>
+    </ul>
+  </li>
+  <li>An algorithm is said to have polynomial time <em>complexity</em> if its run-time is described by $O(n^d)$ for some fixed $d\geq 0$
+    <ul>
+      <li>We will consider such algorithms to be <em>efficient</em></li>
+    </ul>
+  </li>
+  <li>Problems that have no known polynomial-time algorithms are said to be intractable
+    <ul>
+      <li>e.g.: Travelling salesman problem (TSP)
+        <ul>
+          <li>Best run-time: $\Theta(n^{2}2^{n})$</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>source</strong>
+“K-MOOC 허재필 교수님의 &lt;인공지능을 위한 알고리즘과 자료구조: 이론, 코딩, 그리고 컴퓨팅 사고&gt;
+강좌의 5-2 심볼 기반 함수의 점근적 바운드 중(http://www.kmooc.kr/courses/course-v1:SKKUk+SKKU_46+2020_T1)”</p>
+
+<p><a href="/Lc5/Summary01/">back</a>
+<a href="/Lc6/Summary01/">next</a></p>
+:ET

@@ -1,0 +1,17 @@
+I"®<h1 id="coding-session-bfs-and-dfs">Coding Session: BFS and DFS</h1>
+<ul>
+  <li>Graph representation
+    <ul>
+      <li>std::vector to represent edge information based on adjacency list.</li>
+    </ul>
+  </li>
+  <li>Graph traversal
+    <ul>
+      <li>std::stack and std::queue for DFS and BFS, respectively.
+        <h4 id="example">Example</h4>
+        <p><img src="/stl.png" alt="stl" /></p>
+      </li>
+    </ul>
+  </li>
+</ul>
+:ET

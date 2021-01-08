@@ -1,5 +1,5 @@
 ---
-layout:default
+layout: post
 title: "Discount"
 ---
 # Do While
@@ -16,7 +16,7 @@ Sample Output
 600
 1005
 
-'''cpp
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -24,7 +24,7 @@ int main()
 {
     int purchaseAmount = 0;
     double totalPrice;
-    
+
     //your code goes here
 
     /*do{
@@ -33,7 +33,7 @@ int main()
     	++purchaseAmount;
     	totalPrice= n* 0.15;
     	cout<<totalPrice<<endl;
-    	
+
     }while(purchaseAmount <3);*/
 while(purchaseAmount<3){
 	int n;
@@ -42,7 +42,7 @@ while(purchaseAmount<3){
     	cout<<totalPrice<<endl;
     	purchaseAmount++;
 }
-    
+
     return 0;
 }
-'''
+```

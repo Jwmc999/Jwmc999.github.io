@@ -1,0 +1,48 @@
+I"(<h1 id="topics">Topics</h1>
+<h2 id="fundamental-data-structures">Fundamental data structures</h2>
+<ul>
+  <li>Array, list, stack, queue, heap, tree, and graph</li>
+  <li>Graph traversal algorithms: DFS and BFS
+    <h2 id="algorithm-analysis">Algorithm analysis</h2>
+  </li>
+  <li>Asymptotic notations and analysis</li>
+  <li>Time and space complexities
+    <h2 id="fundamental-algorithms">Fundamental algorithms:</h2>
+  </li>
+  <li>Sorting</li>
+  <li>Shortest path</li>
+  <li>Minimum spanning tree</li>
+  <li>Topological sort</li>
+  <li>Dynamic programming
+    <h1 id="stack-and-queue">Stack and Queue</h1>
+  </li>
+  <li>Stack</li>
+  <li>Queue
+    <h1 id="tree-and-graph">Tree and Graph</h1>
+  </li>
+  <li>Tree</li>
+  <li>Graph
+    <h1 id="algorithm-analysis-1">Algorithm Analysis</h1>
+    <h2 id="suppose-that-we-have-two-algorithms">Suppose that we have two algorithms.</h2>
+    <p>As a computer scientist, how can you tell which is better?</p>
+  </li>
+  <li>Insertion sort vs merge sort</li>
+  <li>Merge sort vs quicksort
+    <h2 id="asymptotic-algorithm-analysis-to-evaluate-solutions">(Asymptotic) Algorithm analysis to evaluate solutions</h2>
+  </li>
+  <li>Time/space complexities</li>
+  <li>Weak ordering
+    <h3 id="shortest-path">Shortest Path</h3>
+  </li>
+  <li>A path between two nodes in a graph such that the sum of weights of its constituent edges is minimized.
+    <h3 id="minimum-spanning-tree">Minimum Spanning Tree</h3>
+    <h3 id="topological-sort-and-critical-path">Topological Sort and Critical Path</h3>
+    <h3 id="dynamic-programming">Dynamic Programming</h3>
+    <h3 id="interval-scheduling">Interval scheduling</h3>
+  </li>
+  <li>A largest set of non-overlapping intervals
+    <h3 id="edit-distance">Edit distance</h3>
+    <h3 id="matrix-chain-multiplication">Matrix chain multiplication</h3>
+  </li>
+</ul>
+:ET

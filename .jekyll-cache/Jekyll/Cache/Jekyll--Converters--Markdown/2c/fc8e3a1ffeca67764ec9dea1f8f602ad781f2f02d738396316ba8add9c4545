@@ -1,0 +1,54 @@
+I"?<h1 id="array">Array</h1>
+<ul>
+  <li>A data structure consisting of a collection of <em><strong>values</strong></em></li>
+  <li>Each identified by array <em><strong>index</strong></em>
+    <ul>
+      <li>In C/C++/Java programming languages, array index begins from 0.</li>
+      <li>The range of array index is [0, size -1].
+        <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">score</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span><span class="c1">//Data type Array name [Array size];</span>
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>In C/C++ programming language,
+    <ul>
+      <li>A consecutive set of memory location</li>
+      <li>Logical order is the same as the physical order</li>
+      <li>Creation of an array
+        <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Type</span> <span class="n">d</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+<span class="n">Type</span> <span class="o">*</span><span class="n">d</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Type</span><span class="p">[</span><span class="n">size</span><span class="p">];</span><span class="c1">//Dynamically assign the size of the array. 1) Declare the type and d as pointers 2) Use "new" operator</span>
+<span class="c1">// We can assign the size of the array according to the specific number</span>
+</code></pre></div>        </div>
+      </li>
+      <li>Accessing an element by array index
+        <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">d</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+</code></pre></div>        </div>
+      </li>
+      <li>Release the allocated
+        <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">delete</span> <span class="p">[]</span> <span class="n">d</span><span class="p">;</span>
+</code></pre></div>        </div>
+        <h2 id="creation-of-arrays-in-c-programming-language">Creation of Arrays in C++ Programming Language</h2>
+        <h3 id="1-dimmensional-array">1-dimmensional array</h3>
+        <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+</code></pre></div>        </div>
+        <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span><span class="o">*</span> <span class="n">arr</span> <span class="o">=</span> <span class="n">new</span> <span class="kt">int</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+</code></pre></div>        </div>
+        <h3 id="2-dimensional-array">2-dimensional array</h3>
+        <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">4</span><span class="p">];</span>
+</code></pre></div>        </div>
+        <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span><span class="o">**</span> <span class="n">a</span> <span class="o">=</span> <span class="n">new</span> <span class="kt">int</span><span class="o">*</span> <span class="p">[</span><span class="mi">3</span><span class="p">];</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+  <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">new</span> <span class="kt">int</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
+</code></pre></div>        </div>
+        <h2 id="array-in-memory">Array in Memory</h2>
+        <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">score</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">52</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">61</span><span class="p">};</span>
+<span class="c1">// When we declare an array, each value gets stored sequentially in the actual RAM.</span>
+</code></pre></div>        </div>
+        <h4 id="example">Example</h4>
+        <p>```c
+#include <cstdio></cstdio></p>
+      </li>
+    </ul>
+  </li>
+</ul>
+:ET

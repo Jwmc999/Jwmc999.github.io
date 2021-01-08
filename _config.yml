@@ -4,7 +4,7 @@ author: Mervyn
 description: "Blog on C S"
 show_downloads: true
 google_analytics:
-remote_theme: jekyll/minima
+remote_theme: pages/hacker
 
 # Where things are
 source              : .
@@ -16,6 +16,7 @@ posts_dir           : _posts
 includes_dir        : _includes
 sass :
   sass_dir: _sass
+  sourcemap: never
 collections :
   posts :
     output          : true
@@ -74,7 +75,7 @@ baseurl             : "" # does not include hostname
 show_dir_listing    : false
 
 # Outputting
-permalink           : /:categories/:title/
+permalink           : /:categories/: /:title/
 paginate_path       : /page:num/
 timezone            : null
 

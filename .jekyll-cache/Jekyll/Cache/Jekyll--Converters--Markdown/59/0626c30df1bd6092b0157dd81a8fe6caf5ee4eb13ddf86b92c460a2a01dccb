@@ -1,0 +1,12 @@
+I"x<h1 id="asymptotic-analysis_02">“Asymptotic Analysis_02”</h1>
+<h2 id="theta---notation">$\Theta$ - Notation</h2>
+<ul>
+  <li>$\Theta$ - Notation (theta)
+    <ul>
+      <li>A function $f(n)=\Theta(g(n))$ if there exist positive constants $n_{0}, n_{1}$, and $n_{2}$ such that
+\(0 \leq c_{1}g(n) \leq f(n) \leq c_{2}g(n)\)
+for all $n \geq n_{0}$</li>
+    </ul>
+  </li>
+</ul>
+:ET

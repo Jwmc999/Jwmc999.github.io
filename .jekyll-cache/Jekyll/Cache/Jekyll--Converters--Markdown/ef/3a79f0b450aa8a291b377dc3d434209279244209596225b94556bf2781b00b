@@ -1,0 +1,83 @@
+I"š<h1 id="tree">Tree</h1>
+<h2 id="a-collection-of-nodes-to-represent-a-hierarchical-relationship">A collection of nodes to represent a hierarchical relationship</h2>
+<ul>
+  <li>Information is stored in nodes</li>
+  <li>There is a first node, or root</li>
+  <li>Each node has variable number of successors (children)</li>
+  <li>Each node (other than the root) has exactly one node (parent) pointing to it.
+    <h3 id="example">Example</h3>
+  </li>
+  <li>Directory structures
+    <h1 id="trees">Trees</h1>
+    <p><img src="/tree.png" alt="trees" /></p>
+    <h2 id="all-nodes-will-have-zero-or-more-child-nodes-or-children">All nodes will have zero or more child nodes or children</h2>
+  </li>
+  <li>I has three children: J, K, and L
+    <h2 id="all-nodes-other-than-the-root-node-there-is-one-parent-node">All nodes other than the root node, there is one parent node.</h2>
+  </li>
+  <li>H is the parent of I
+    <h2 id="the-degree-of-a-node-is-defined-as-the-number-of-its-children">The degree of a node is defined as the number of its children:</h2>
+  </li>
+  <li>deg(I) = 3
+    <h2 id="nodes-with-the-same-parent-are-siblings">Nodes with the same parent are <em>siblings</em></h2>
+  </li>
+  <li>J, K, and L are siblings
+    <h2 id="leaf-and-internal-nodes">Leaf and Internal Nodes</h2>
+  </li>
+  <li>Nodes with degree zero (zero children) are also called leaf nodes.</li>
+  <li>All other nodes are said to be internal nodes.
+    <h2 id="unordered--ordered">Unordered &amp; Ordered</h2>
+  </li>
+  <li>These trees are equal if the order of the children is ignored: unordered tree</li>
+  <li>They are different if order is relevant: ordered trees
+    <h2 id="paths">Paths</h2>
+    <p><img src="/path.png" alt="paths" /></p>
+  </li>
+  <li>A path is a sequence of nodes (\(a_{0}\), \(a_{2}\), â€¦ , \(a_{n}\)), where \(a_{k+1}\) is a child of \(a_{k}\).
+    <ul>
+      <li>The length of this path is <em>n</em></li>
+      <li>The path (B, E, G) has length 2
+        <h2 id="depth">Depth</h2>
+        <p><img src="/depth.png" alt="depth" /></p>
+      </li>
+    </ul>
+  </li>
+  <li>For each node in a tree, there exists a unique path from the root node to that node.</li>
+  <li>The length of this path is depth of the node.
+    <ul>
+      <li>E has depth 2</li>
+      <li>L has depth 3
+        <h2 id="height">Height</h2>
+        <p><img src="/height.png" alt="height" /></p>
+      </li>
+    </ul>
+  </li>
+  <li>The height of a tree is defined as the maximum depth of any node within the tree
+    <ul>
+      <li>The height of a tree within one node is 0
+        <ul>
+          <li>Just the root node</li>
+        </ul>
+      </li>
+      <li>For convenience, we define the height of the empty tree to be -1
+        <h2 id="ancestor-and-descendant">Ancestor and Descendant</h2>
+      </li>
+    </ul>
+  </li>
+  <li>If a path exists from node <em>a</em> to node <em>b</em>
+    <ul>
+      <li><em>a</em> is an ancestor of <em>b</em></li>
+      <li><em>b</em> is a descendent of <em>a</em></li>
+    </ul>
+  </li>
+  <li>Thus, a node is both an ancestor and a descendent of itself
+    <ul>
+      <li>We can add the adjective strict to exclude equality: <em>a</em> is a strict descendent of <em>b</em> if <em>a</em> is a descendent of <em>b</em> but \(a \neq b\)
+        <h2 id="the-root-node-is-an-ancestor-of-all-nodes">The root node is an ancestor of all nodes</h2>
+        <h3 id="example-1">Example</h3>
+        <p><img src="/ancestors.png" alt="ansc" /></p>
+      </li>
+    </ul>
+  </li>
+</ul>
+:ET

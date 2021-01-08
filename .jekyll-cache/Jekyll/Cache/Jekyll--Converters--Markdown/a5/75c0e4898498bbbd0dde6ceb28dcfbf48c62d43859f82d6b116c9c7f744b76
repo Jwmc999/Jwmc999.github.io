@@ -1,0 +1,99 @@
+I"d<p><strong>Course Objectives</strong></p>
+<ul>
+  <li>Discuss key data structures and algorithms essential for solving problems with computers</li>
+  <li>(Powerful) Programming skills
+    <ul>
+      <li>Translate your idea into languages that computers can understand</li>
+      <li>Live coding session!</li>
+    </ul>
+  </li>
+  <li>Computational thinking
+    <ul>
+      <li>Problem formulation (abstraction)</li>
+      <li>Solution expression (automation)</li>
+      <li>Solution execution and evaluation (analysis)</li>
+    </ul>
+  </li>
+  <li>“How to think like a computer scientist”</li>
+</ul>
+
+<p><strong>Summary</strong></p>
+<ul>
+  <li>Definitions and examples of
+Data structures
+Algorithms</li>
+</ul>
+
+<h1 id="data-structures">Data Structures</h1>
+<h2 id="data-structure-is-a-collection-of">Data Structure is a collection of</h2>
+<ul>
+  <li>Data values</li>
+  <li>Relationships among data values</li>
+  <li>Operations that can be applied to the data
+    <h2 id="abstraction">Abstraction</h2>
+  </li>
+  <li>Process of removing details while preserving information relevant to solving the problem
+    <h2 id="fundamental-data-structures">Fundamental data structures</h2>
+    <p>| Primitive | Non-Primitive |
+|———-|——-|
+| Integer, Float, Character | Linear, Non-Linear, Files |</p>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Linear</th>
+      <th>Non-Linear</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Arrays, Lists</td>
+      <td>Trees, Graphs</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lists</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stacks, Queues</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Appropriate data structure should be chosen according to the data characteristics
+    <h2 id="algorithm">Algorithm</h2>
+  </li>
+  <li>An algorithm is a sequence of computational steps that transform the input into the output.</li>
+  <li>An instance of a problem consists of the input needed to compute a solution to the problem.
+    <ul>
+      <li>A correct algorithm:</li>
+      <li>for every input instances, halts with the correct output
+        <h2 id="sorting-problem">Sorting Problem</h2>
+      </li>
+    </ul>
+  </li>
+  <li>A sorting algorithm
+    <ul>
+      <li>Input: A sequence of <em>n</em> numbers &lt;<em>a1, a2,…, an</em>&gt;</li>
+      <li>Output: A permutation (reordering) of the input sequence, &lt;<em>b1, b2,…, bn</em>&gt;, such that <em>b1=&lt;b2=&lt;…=&lt;bn</em></li>
+      <li>Instance: &lt;7, 10, 4, 5, 2&gt;</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>source</strong>
+“K-MOOC 허재필 교수님의 &lt;인공지능을 위한 알고리즘과 자료구조: 이론, 코딩, 그리고 컴퓨팅 사고&gt;
+강좌의 1-1 자료구조/알고리즘의 정의와 중요성 중(http://www.kmooc.kr/courses/course-v1:SKKUk+SKKU_46+2020_T1)”</p>
+
+<p><a href="/Contents/">back</a>
+<a href="/Summary02/">next</a></p>
+:ET

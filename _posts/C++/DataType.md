@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "int, double, float"
 ---
 # Which data type?
@@ -12,7 +12,7 @@ Sample Input
 Sample Output
 Not OK
 
-'''cpp
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -30,4 +30,4 @@ else{
 
 return 0;
 }
-'''
+```
