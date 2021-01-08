@@ -75,7 +75,7 @@ baseurl             : "" # does not include hostname
 show_dir_listing    : false
 
 # Outputting
-permalink           : /:categories/: /:title/
+permalink           : /:categories/:title/
 paginate_path       : /page:num/
 timezone            : null
 
