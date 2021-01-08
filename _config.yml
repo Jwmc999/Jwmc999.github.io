@@ -12,7 +12,6 @@ destination         : ./_site
 plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
 layouts_dir         : _layouts
 data_dir            : _data
-posts_dir           : _posts
 includes_dir        : _includes
 sass :
   sass_dir: _sass
