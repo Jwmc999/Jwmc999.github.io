@@ -1,10 +1,12 @@
 ---
 layout: post
 title: "Find Largest Element"
+comments: true
+permalink: /dynamicmemory/
 ---
 # Dynamic Memory
-The code provided calculates the largest element of the array nums and outputs it.
-Complete the code to declare the nums array and take the array elements as input.
+The code provided calculates the largest element of the array **nums** and outputs it.
+Complete the code to declare the **nums** array and take the array elements as input.
 The array can be of any variable size, so the first input should be the size of the array, followed by its elements.
 
 Sample Input

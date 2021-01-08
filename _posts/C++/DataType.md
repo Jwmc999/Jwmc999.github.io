@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "int, double, float"
+comments: true
+permalink: /datatype/
 ---
 # Which data type?
 Write a program that takes body temperature in Celsius as input.

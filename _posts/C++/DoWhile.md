@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Discount"
+comments: true
+permalink: /dowhile/
 ---
 # Do While
 A supermarket has launched a campaign offering a 15% discount on 3 items.

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Countdown"
+comments: true
+permalink: /dowhile_decrement/
 ---
 # Do While Loop
 You need to make a countdown app.

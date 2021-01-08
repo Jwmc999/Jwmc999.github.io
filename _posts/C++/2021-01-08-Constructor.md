@@ -17,6 +17,7 @@ Ocean
 Tip: The constructor should take one string as the argument and output it.
 
 Answer1:
+```cpp
 #include <iostream>
 #include <string>
 using namespace std;
@@ -29,7 +30,7 @@ class Painting {
       Painting(string nm){
       	setTitle(nm);
       }
-      
+
       void setTitle(string x){
 	name = x;
 	cout<<name<<endl;
@@ -46,8 +47,10 @@ int main() {
 
     return 0;
 }
+```
 
 Answer2:
+```cpp
 #include <iostream>
 #include <string>
 using namespace std;
@@ -58,7 +61,7 @@ class Painting {
       Painting(string nm){
       	setTitle(nm);
       }
-      
+
       void setTitle(string x){
 	name = x;
 }
@@ -77,3 +80,4 @@ int main() {
 
     return 0;
 }
+```

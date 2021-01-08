@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Multi-Dimension Array"
+comments: true
+permalink: /arraymatrix/
 ---
 # Matrix Array
 You are a movie theater manager.

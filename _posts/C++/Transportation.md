@@ -1,19 +1,21 @@
 ---
-layout: default
-Title: "Empty seats"
+layout: post
+title: "Empty seats"
+comments: true
+permalink: /calculation/
 ---
 # Number of Empty Seats
-You are making a program for a bus service. 
-A bus can transport 50 passengers at once. 
+You are making a program for a bus service.
+A bus can transport 50 passengers at once.
 Given the number of passengers waiting in the bus station as input, you need to calculate and output how many empty seats the last bus will have.
 
 Sample Input:
 126
 
-Sample Output: 
+Sample Output:
 24
 
-'''cpp
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -27,4 +29,4 @@ int main() {
     cout<< c <<endl;
     return 0;
 }
-'''
+```

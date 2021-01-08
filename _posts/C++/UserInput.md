@@ -1,6 +1,8 @@
 ---
-layout:default
+layout: post
 Title: "Take Input"
+comments: true
+permalink: /cin/
 ---
 #Probelm
 Write a program that takes two numbers as input, assigns those values to the provided a and b variables, then outputs their sum.
@@ -12,7 +14,7 @@ Sample Input
 Sample Output
 72
 
-'''cpp
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -26,4 +28,4 @@ int main() {
     cout<< sum << endl;
     return 0;
 }
-'''
+```

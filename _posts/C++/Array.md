@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "1-Dimension Array"
+comments: true
+permalink: /array/
 ---
 # Array
 You are given an array of doubles of items in a store that have different prices (see template).

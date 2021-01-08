@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Smallest Element"
+title: "Smallest Element: array"
+comments: true
+permalink: /smallest/
 ---
 # Discount Program
-
 You are working on a ticketing system. A ticket costs $10.
 The office is running a discount campaign: each group of 5 people is getting a discount, which is determined by the age of the youngest person in the group.
 You need to create a program that takes the ages of all 5 people as input and outputs the total price of the tickets.
@@ -46,8 +47,9 @@ int main() {
 }
 ```
 
-* Declaring dynamic Memory for ages gives wrong answer, unlike "Dynamic Memory" practice on the largest element.
+* Declaring dynamic Memory for ages gives wrong answer, unlike **[Dynamic Memory]()** practice on the largest element.
 (Need more knowledge & practice on Dynamic Memory)
+
 ```cpp
     int *ages = NULL;
     ages = new int[5];

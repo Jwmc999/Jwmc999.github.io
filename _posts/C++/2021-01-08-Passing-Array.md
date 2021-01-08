@@ -17,6 +17,7 @@ Bruce
 Richard
 Mary
 
+```cpp
 #include <iostream>
 #include <string>
 using namespace std;
@@ -39,6 +40,7 @@ int main() {
     cin >> n;
     //call function
     winners(customers, 13, n);
-    
+
     return 0;
 }
+```

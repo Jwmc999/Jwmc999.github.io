@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Default Argument"
+comments: true
+permalink: /defaultArgument/
 ---
 # Default Argument
 

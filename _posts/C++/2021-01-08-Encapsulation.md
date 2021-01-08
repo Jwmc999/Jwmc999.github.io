@@ -4,7 +4,7 @@ title: "Encapsulation"
 comments: true
 permalink: /encapsulation/
 ---
-# Class Encapsultaion
+# Class Encapsulation
 You are a supercar engineer and currently setting the engine's horsepower.
 Complete the given program by completing methods to set and get the horsepower of the car object in order to output it.
 The program should warn "Too much" if the inputted horsepower is above 800.
@@ -18,12 +18,13 @@ Too much
 
 Tip: You should use the if statement directly inside the setter function.
 
+```cpp
 #include <iostream>
 using namespace std;
 
 //class definition
 class Car{
-    
+
     //private area
     private:
         int horsepowers;
@@ -36,12 +37,12 @@ class Car{
          if(horsepowers> 800)
 		cout<<"Too much"<<endl;
         }
-    
+
         //complete the getter function
         int getHorsepowers() {
         return horsepowers;
         }
-        
+
 
 };
 
@@ -59,3 +60,4 @@ int main() {
 
     return 0;
 }
+```
