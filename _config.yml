@@ -29,10 +29,7 @@ exclude             :
   - Gemfile
   - Gemfile.lock
   - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - vendor
 keep_files          :
   - .git
   - .svn
