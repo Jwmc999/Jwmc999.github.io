@@ -1,0 +1,40 @@
+I"Q<h1 id="passing-arrays">Passing Arrays</h1>
+<p>A local supermarket is running a promotion: each Nth customer will receive one item for free. Customers names are sequentially given as array of strings (see template).
+Write a function that receives the array of customers, its size, and the N number as arguments, and  prints the names of the lucky customers each in a new line.</p>
+
+<p>Sample Input
+3</p>
+
+<p>Sample output
+Rayan
+Bruce
+Richard
+Mary</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;iostream&gt;
+#include &lt;string&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="c1">//complete the function</span>
+<span class="kt">void</span> <span class="nf">winners</span><span class="p">(</span><span class="n">string</span> <span class="n">visitor</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">size</span><span class="p">,</span> <span class="kt">int</span> <span class="n">N</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="n">N</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">visitor</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+
+    <span class="n">string</span> <span class="n">customers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Alice"</span><span class="p">,</span> <span class="s">"Bob"</span><span class="p">,</span> <span class="s">"Rayan"</span><span class="p">,</span> <span class="s">"Emma"</span><span class="p">,</span> <span class="s">"Ann"</span><span class="p">,</span> <span class="s">"Bruce"</span><span class="p">,</span> <span class="s">"Synthia"</span><span class="p">,</span> <span class="s">"Daniel"</span><span class="p">,</span> <span class="s">"Richard"</span><span class="p">,</span> <span class="s">"Sam"</span><span class="p">,</span> <span class="s">"Nick"</span><span class="p">,</span> <span class="s">"Mary"</span><span class="p">,</span> <span class="s">"Paul"</span><span class="p">};</span>
+
+    <span class="c1">//getting the lucky number as input</span>
+    <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
+    <span class="c1">//call function</span>
+    <span class="n">winners</span><span class="p">(</span><span class="n">customers</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+:ET

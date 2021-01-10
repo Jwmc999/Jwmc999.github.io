@@ -1,0 +1,35 @@
+I"E<h1 id="graph-traversal">Graph Traversal</h1>
+<ul>
+  <li>Process to visit nodes in a graph.</li>
+  <li>Traversals of graphs are also called searches.</li>
+  <li>How to perform the traversal?
+    <ul>
+      <li>Breadth-first search (BFS)</li>
+      <li>Depth-first search (DFS)
+        <h2 id="breadth-first-search-bfs">Breadth-First Search (BFS)</h2>
+      </li>
+    </ul>
+  </li>
+  <li>Algorithm description
+    <ul>
+      <li>Choose any vertex, mark it as visited and push it onto queue.</li>
+      <li>While the queue is not empty:
+        <ul>
+          <li>Pop a vertex <em>v</em> from the queue</li>
+          <li>For each vertex adjacent to <em>v</em> that has not been visited:
+            <ul>
+              <li>Mark it visited, and</li>
+              <li>Push it onto the queue</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>This continues until the queue is empty</li>
+  <li>Note: if there are no unvisited vertices, the graph is connected.
+    <h4 id="example">Example</h4>
+    <p><img src="/assets/bfs.png" alt="BFS" /></p>
+  </li>
+</ul>
+:ET

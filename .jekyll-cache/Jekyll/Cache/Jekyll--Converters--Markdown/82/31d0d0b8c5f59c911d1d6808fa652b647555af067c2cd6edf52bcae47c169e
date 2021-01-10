@@ -1,0 +1,50 @@
+I"$<h1 id="pass-by-reference">Pass by Reference</h1>
+<p>You operate a mobile provider running a promotion that multiplies a user’s internet bandwidth.
+Fix the program by completing the function and calling it, so that the given megabyte outputs before and after the promotion work correctly.
+The multiplier is taken as input inside the multiplier function.</p>
+
+<p>Sample Input
+5
+2</p>
+
+<p>Sample Output
+Before the promotion: 5
+After the promotion: 10</p>
+
+<p>Tip: The first input is the count of megabytes, the second is multiplier.
+The first outputted line represents the count of megabytes before the function-multiplier call, and the second one - after.
+(Argument modified)</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;iostream&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="cm">/*complete the function to multiple the megabytes,
+  don't forget to set the parameter*/</span>
+<span class="kt">void</span> <span class="nf">promotion</span><span class="p">(</span><span class="kt">int</span> <span class="o">*</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="c1">//taking multiplier as input</span>
+    <span class="kt">int</span> <span class="n">multiplier</span><span class="p">;</span>
+    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">multiplier</span><span class="p">;</span>
+
+    <span class="o">*</span><span class="n">x</span> <span class="o">*=</span> <span class="n">multiplier</span><span class="p">;</span>
+
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//getting initial count of megabytes</span>
+    <span class="kt">int</span> <span class="n">megabytes</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">megabytes</span><span class="p">;</span>
+
+    <span class="c1">//printing the count of megabytes before the promotion</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Before the promotion: "</span> <span class="o">&lt;&lt;</span> <span class="n">megabytes</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+
+    <span class="c1">//complete the function call</span>
+    <span class="n">promotion</span><span class="p">(</span><span class="o">&amp;</span><span class="n">megabytes</span><span class="p">);</span>
+
+    <span class="c1">//printing the count of megabytes after the promotion</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"After the promotion: "</span> <span class="o">&lt;&lt;</span> <span class="n">megabytes</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+:ET

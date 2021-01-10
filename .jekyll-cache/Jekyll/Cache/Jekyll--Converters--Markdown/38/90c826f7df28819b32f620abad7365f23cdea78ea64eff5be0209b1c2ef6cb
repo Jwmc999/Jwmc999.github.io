@@ -1,0 +1,57 @@
+I""<h1 id="class-encapsulation">Class Encapsulation</h1>
+<p>You are a supercar engineer and currently setting the engine’s horsepower.
+Complete the given program by completing methods to set and get the horsepower of the car object in order to output it.
+The program should warn “Too much” if the inputted horsepower is above 800.</p>
+
+<p>Sample Input
+950</p>
+
+<p>Sample Output
+Too much
+950</p>
+
+<p>Tip: You should use the if statement directly inside the setter function.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;iostream&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="c1">//class definition</span>
+<span class="k">class</span> <span class="nc">Car</span><span class="p">{</span>
+
+    <span class="c1">//private area</span>
+    <span class="nl">private:</span>
+        <span class="kt">int</span> <span class="n">horsepowers</span><span class="p">;</span>
+
+    <span class="c1">//public area</span>
+    <span class="nl">public:</span>
+        <span class="c1">//complete the setter function</span>
+        <span class="kt">void</span> <span class="n">setHorsepowers</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+         <span class="n">horsepowers</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>
+         <span class="k">if</span><span class="p">(</span><span class="n">horsepowers</span><span class="o">&gt;</span> <span class="mi">800</span><span class="p">)</span>
+		<span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"Too much"</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="c1">//complete the getter function</span>
+        <span class="kt">int</span> <span class="n">getHorsepowers</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">horsepowers</span><span class="p">;</span>
+        <span class="p">}</span>
+
+
+<span class="p">};</span>
+
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//getting input</span>
+    <span class="kt">int</span> <span class="n">horsepowers</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">horsepowers</span><span class="p">;</span>
+    <span class="c1">//creating the object of class Car</span>
+    <span class="n">Car</span> <span class="n">car</span><span class="p">;</span>
+    <span class="c1">//setting the value for private member</span>
+    <span class="n">car</span><span class="p">.</span><span class="n">setHorsepowers</span><span class="p">(</span><span class="n">horsepowers</span><span class="p">);</span>
+    <span class="c1">//printing the value of private member</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">car</span><span class="p">.</span><span class="n">getHorsepowers</span><span class="p">();</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+:ET

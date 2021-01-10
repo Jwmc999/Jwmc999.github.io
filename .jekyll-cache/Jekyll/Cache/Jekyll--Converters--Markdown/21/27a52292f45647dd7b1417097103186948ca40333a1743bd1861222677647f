@@ -1,0 +1,137 @@
+I"*:<h1 id="coding-session-bfs-and-dfs">Coding Session: BFS and DFS</h1>
+<ul>
+  <li>Graph representation
+    <ul>
+      <li>std::vector to represent edge information based on adjacency list.</li>
+    </ul>
+  </li>
+  <li>Graph traversal
+    <ul>
+      <li>std::stack and std::queue for DFS and BFS, respectively.
+        <h4 id="example">Example</h4>
+        <p><img src="/assets/stl.png" alt="stl" /></p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;cstdio&gt;
+#include &lt;vector&gt;
+#include &lt;queue&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">Graph</span>
+<span class="p">{</span>
+<span class="nl">public:</span>
+  <span class="kt">int</span> <span class="n">nV</span><span class="p">,</span> <span class="n">nE</span><span class="p">;</span>
+
+  <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="o">*</span><span class="n">edges</span><span class="p">;</span>
+
+  <span class="kt">void</span> <span class="n">Init</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">_filename</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="kt">FILE</span> <span class="o">*</span><span class="n">input</span> <span class="o">=</span> <span class="n">fopen</span><span class="p">(</span><span class="n">_filename</span><span class="p">,</span> <span class="s">"r"</span><span class="p">);</span>
+    <span class="n">fscanf</span><span class="p">(</span><span class="n">input</span><span class="p">,</span> <span class="s">"%d"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">nV</span><span class="p">);</span>
+    <span class="n">fscanf</span><span class="p">(</span><span class="n">input</span><span class="p">,</span> <span class="s">"%d"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">nE</span><span class="p">);</span>
+    <span class="n">edges</span><span class="o">=</span> <span class="k">new</span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">[</span><span class="n">nV</span><span class="p">];</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">nE</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">char</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">;</span>
+        <span class="n">fscanf</span><span class="p">(</span><span class="n">input</span><span class="p">,</span> <span class="s">" %c %c"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">b</span><span class="p">);</span>
+        <span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">;</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">a</span><span class="o">-</span><span class="sc">'A'</span><span class="p">;</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">b</span><span class="o">-</span><span class="sc">'A'</span><span class="p">;</span>
+        <span class="n">edges</span><span class="p">[</span><span class="n">x</span><span class="p">].</span><span class="n">push_back</span><span class="p">(</span><span class="n">y</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">fclose</span><span class="p">(</span><span class="n">input</span><span class="p">);</span>
+  <span class="p">}</span>
+
+<span class="p">};</span>
+
+<span class="kt">void</span> <span class="nf">BFS</span><span class="p">(</span><span class="n">Graph</span> <span class="o">&amp;</span><span class="n">_g</span><span class="p">,</span> <span class="n">int_stIdx</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kt">bool</span> <span class="o">*</span><span class="n">visit</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">bool</span> <span class="p">[</span><span class="n">_g</span><span class="p">.</span><span class="n">nV</span><span class="p">];</span>
+  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">_g</span><span class="p">.</span><span class="n">nV</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">visit</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="n">queue</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">q</span><span class="p">;</span>
+  <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">_stIdx</span><span class="p">);</span>
+  <span class="n">visit</span><span class="p">[</span><span class="n">_stIdx</span><span class="p">]</span><span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+
+  <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span>
+  <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">();</span>
+    <span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"%c "</span><span class="p">,</span> <span class="n">x</span><span class="o">+</span><span class="sc">'A'</span><span class="p">);</span>
+
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">_g</span><span class="p">.</span><span class="n">edges</span><span class="p">[</span><span class="n">x</span><span class="p">].</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">visit</span><span class="p">[</span><span class="n">_g</span><span class="p">.</span><span class="n">edges</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">i</span><span class="p">]])</span>
+      <span class="p">{</span>
+        <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">_g</span><span class="p">.</span><span class="n">edges</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">i</span><span class="p">]);</span>
+        <span class="n">visit</span><span class="p">[</span><span class="n">_g</span><span class="p">.</span><span class="n">edges</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">i</span><span class="p">]]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">delete</span> <span class="p">[]</span> <span class="n">visit</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">DFS</span><span class="p">(</span><span class="n">Graph</span> <span class="o">&amp;</span><span class="n">_g</span><span class="p">,</span> <span class="kt">int</span> <span class="n">_stIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kt">bool</span> <span class="o">*</span><span class="n">visit</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">bool</span> <span class="p">[</span><span class="n">_g</span><span class="p">.</span><span class="n">nV</span><span class="p">];</span>
+  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">_g</span><span class="p">.</span><span class="n">nV</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">visit</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+<span class="p">}</span>
+
+  <span class="n">stack</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">s</span><span class="p">;</span>
+  <span class="n">s</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">_stIdx</span><span class="p">);</span>
+  <span class="n">visit</span><span class="p">[</span><span class="n">_stIdx</span><span class="p">]</span><span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+
+  <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">s</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span>
+  <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">top</span><span class="p">();</span>
+    <span class="n">s</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"%c "</span><span class="p">,</span> <span class="n">x</span><span class="o">+</span><span class="sc">'A'</span><span class="p">);</span>
+
+    <span class="c1">//To order alphabetically, for(int i=_g.edges[x].size() - 1; i&gt;=0; i--)</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">_g</span><span class="p">.</span><span class="n">edges</span><span class="p">[</span><span class="n">x</span><span class="p">].</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">visit</span><span class="p">[</span><span class="n">_g</span><span class="p">.</span><span class="n">edges</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">i</span><span class="p">]])</span>
+      <span class="p">{</span>
+        <span class="n">s</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">_g</span><span class="p">.</span><span class="n">edges</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">i</span><span class="p">]);</span>
+        <span class="n">visit</span><span class="p">[</span><span class="n">_g</span><span class="p">.</span><span class="n">edges</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">i</span><span class="p">]]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">delete</span> <span class="p">[]</span> <span class="n">visit</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">Graph</span> <span class="n">g</span><span class="p">;</span>
+  <span class="n">g</span><span class="p">.</span><span class="n">Init</span><span class="p">(</span> <span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">);</span>
+
+  <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"BFS: "</span><span class="p">);</span>
+  <span class="n">BFS</span><span class="p">(</span> <span class="n">g</span> <span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+
+  <span class="n">printf</span><span class="p">(</span><span class="s">"DFS: "</span><span class="p">);</span>
+  <span class="n">DFS</span><span class="p">(</span> <span class="n">g</span> <span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+
+
+  <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>source</strong>
+“K-MOOC 허재필 교수님의 &lt;인공지능을 위한 알고리즘과 자료구조: 이론, 코딩, 그리고 컴퓨팅 사고&gt;
+강좌의 4-2 그래프 탐색의 STL 활용 구현 중(http://www.kmooc.kr/courses/course-v1:SKKUk+SKKU_46+2020_T1)”</p>
+
+<p><a href="/Lc4/Summary01/">back</a>
+<a href="/Lc5/Summary01/">next</a></p>
+:ET
