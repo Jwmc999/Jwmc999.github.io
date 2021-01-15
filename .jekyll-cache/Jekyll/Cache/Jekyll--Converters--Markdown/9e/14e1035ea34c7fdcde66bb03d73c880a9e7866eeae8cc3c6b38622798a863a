@@ -1,0 +1,134 @@
+I"�*<h1 id="problem">Problem</h1>
+<p><img src="/assets/problem2.png" alt="problem2" /></p>
+
+<ul>
+  <li>
+    <p>On number line, when the current point is X, the next movement is one of X+1, X-1, 2*x. It takes 1 second for each movement.</p>
+  </li>
+  <li>
+    <p>Given the current point X and target point D, print out minimum seconds required for reaching to the target point.
+(0 &lt;= X, D &lt;= 100,000)</p>
+    <ul>
+      <li>Example Input: 5 17</li>
+      <li>Example Output: 4</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>source</strong>
+“ K-MOOC 허재필 교수님의 &lt;인공지능을 위한 알고리즘과 자료구조: 이론, 코딩, 그리고 컴퓨팅 사고&gt; 강좌의 과제1 중(http://www.kmooc.kr/courses/course-v1:SKKUk+SKKU_46+2020_T1)”</p>
+
+<h2 id="algorithm">Algorithm</h2>
+<p>Shortest time from X to D</p>
+<ol>
+  <li>count shortest path –&gt; BFS
+    <ul>
+      <li>shortest path = shortest path of parent +1</li>
+    </ul>
+  </li>
+  <li>create queue, enqueue starting position (let’s call it node)
+    <ul>
+      <li>if X == D, print 0</li>
+    </ul>
+  </li>
+  <li>else, loop till the queue is empty
+    <ul>
+      <li>pop next unvisited node from queue</li>
+      <li>If the popped node is destination node, return it</li>
+      <li>else, mark current node as visited, and for each of 3 possible movements, enqueue each valid movement into the queue with +1 distance</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+<p>header: <iostream>, <queue>,...
+array: row=[-1, +1, *2], swap//+x
+number line: 0 &lt;=  x, d &lt;= 100,000
+how to count steps???// starting point (0) + first shortest path (1) + shortest path from first shortest path (1) +....</queue></iostream></p>
+
+<h2 id="coding">Coding</h2>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;iostream&gt;
+#include &lt;queue&gt;
+#include &lt;array&gt;
+#include &lt;set&gt;// int X, D are elements of array[100001]
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">100001</span><span class="p">];</span>
+
+<span class="kt">bool</span> <span class="nf">Arr</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">set</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">s</span><span class="p">{</span> <span class="n">begin</span><span class="p">(</span><span class="n">arr</span><span class="p">),</span> <span class="n">end</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="p">};</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">100001</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span><span class="c1">//[0, 1, 2 ... , 100000];</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+   <span class="p">}</span>
+
+
+<span class="k">struct</span> <span class="nc">Node</span>
+<span class="p">{</span>
+    <span class="n">Node</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">dist</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">:</span> <span class="n">x</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">distance</span><span class="p">(</span><span class="n">dist</span><span class="p">)</span> <span class="p">{}</span>
+
+    <span class="c1">//'distance' represents its minimum distance from the source.</span>
+    <span class="kt">int</span> <span class="n">x</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">distance</span><span class="p">;</span>
+
+    <span class="c1">//If you want to conveniently put objects in a  set or a map,</span>
+    <span class="c1">//they must provide a less-than operator.</span>
+    <span class="kt">bool</span> <span class="k">operator</span><span class="o">&lt;</span><span class="p">(</span><span class="k">const</span> <span class="n">Node</span><span class="o">&amp;</span> <span class="n">o</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">o</span><span class="p">.</span><span class="n">x</span> <span class="o">||</span> <span class="n">x</span> <span class="o">==</span> <span class="n">o</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">BFS</span><span class="p">(</span><span class="n">Node</span> <span class="n">X</span><span class="p">,</span> <span class="n">Node</span> <span class="n">D</span><span class="p">)</span>
+<span class="p">{</span>   
+    <span class="n">set</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span> <span class="n">visited</span><span class="p">;</span>
+
+    <span class="n">queue</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span> <span class="n">q</span><span class="p">;</span>
+    <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">X</span><span class="p">);</span>
+
+    <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span>
+    <span class="p">{</span>
+        <span class="n">Node</span> <span class="n">node</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">();</span>
+        <span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+
+        <span class="kt">int</span> <span class="n">X</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">dist</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="n">distance</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">row</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">X</span> <span class="p">};</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">X</span> <span class="o">==</span> <span class="n">D</span><span class="p">.</span><span class="n">x</span> <span class="p">)</span>
+            <span class="k">return</span> <span class="n">dist</span><span class="p">;</span>
+
+        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">visited</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="n">node</span><span class="p">))</span>
+        <span class="p">{</span>
+            <span class="n">visited</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">node</span><span class="p">);</span>
+            <span class="p">{</span>
+                <span class="c1">//check for all 3 possible movements and enqueue each valid movement into the queue.</span>
+                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+                <span class="p">{</span>
+                    <span class="kt">int</span> <span class="n">x1</span> <span class="o">=</span> <span class="n">X</span> <span class="o">+</span> <span class="n">row</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+
+                    <span class="k">if</span> <span class="p">(</span><span class="n">x1</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">x1</span> <span class="o">&lt;</span> <span class="mi">100001</span><span class="p">)</span>
+                        <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">({</span> <span class="n">x1</span><span class="p">,</span> <span class="n">dist</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">});</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">Node</span> <span class="n">X</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">5</span> <span class="p">};</span>
+
+    <span class="n">Node</span> <span class="n">D</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">17</span> <span class="p">};</span>
+
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Minimum number of steps required is "</span> <span class="o">&lt;&lt;</span> <span class="n">BFS</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">D</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p><strong>References</strong>
+“https://www.techiedelight.com/chess-knight-problem-find-shortest-path-source-destination/#:~:text=Given%20a%20chess%20board%2C%20find,given%20destination%20from%20given%20source.&amp;text=The%20idea%20is%20to%20use,Below%20is%20the%20complete%20algorithm.”</p>
+:ET

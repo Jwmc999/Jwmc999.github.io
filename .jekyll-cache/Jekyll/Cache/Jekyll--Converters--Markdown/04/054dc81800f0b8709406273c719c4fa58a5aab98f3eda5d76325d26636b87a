@@ -1,0 +1,69 @@
+I"�<h2 id="control-statements">Control Statements</h2>
+<ul>
+  <li>These are statements which potentially alter the execution of instructions
+    <ul>
+      <li>Conditional statements
+        <ul>
+          <li>if, switch</li>
+        </ul>
+      </li>
+      <li>Condition-controlled loops
+        <ul>
+          <li>for, while, do-while</li>
+        </ul>
+      </li>
+      <li>Count-controlled loops
+        <ul>
+          <li>for i from 1 to 10 do … end do; #Maple</li>
+        </ul>
+      </li>
+      <li>Collection-controlled loops
+        <ul>
+          <li>foreach(int i in array){ … } //C#</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Given
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="n">condition</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="c1">//true body</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+<span class="c1">//false body</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>The runtime of a conditional statement is:</li>
+  <li>the run time of the condition (the test), plus</li>
+  <li>the run time of the body which is run</li>
+  <li>
+    <p>In most cases, the run time of the condition is $\Theta(1)$ (constant)</p>
+  </li>
+  <li>
+    <p>In some cases, it is easy to determine which statement must be run:</p>
+  </li>
+  <li>IN others, it is less obvious
+    <h2 id="analysis-of-statements">Analysis of Statements</h2>
+  </li>
+  <li>In this case, we do not know</li>
+  <li>If we had information about the distribution of the entries of the array, we may be able to determine it</li>
+  <li>if the list is sorted (ascending) it will always be run</li>
+  <li>if the list is sorted (descending) it will be run once</li>
+  <li>if the list is uniformly randomly distributed, then?</li>
+  <li>It will be discussed at the end of this topic
+    <h2 id="condition-controlled-loops">Condition-controlled loops</h2>
+  </li>
+  <li>The initialization, condition, and increment usually are single statements running in $\Theta(1)$
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="c1">//... code which is $\Theta(f(n))$</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+    <p>Assuming there are no break or return statements in the loop, the run time is $\Omega(n)$</p>
+  </li>
+  <li>If the body does not depend on the variable (in this example, i), then the run time of for() is $\Theta(n f(n))$</li>
+  <li>If the body is O(f(n)), then the run time of the loop is O(n f(n))</li>
+</ul>
+:ET

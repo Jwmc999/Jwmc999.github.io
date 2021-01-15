@@ -1,0 +1,14 @@
+I"�<h1 id="insertion-sort">Insertion Sort</h1>
+<h2 id="sorting-problem">Sorting Problem</h2>
+<ul>
+  <li>Input: A sequence of <em>n</em> numbers &lt;$a_{1}, a_{2}, …, a_{n}$&gt;</li>
+  <li>Output: A permutation (reordering) of the input sequence, &lt;$b_{1}, b_{2}, …, b_{n}$&gt;, such that $b_{1} \leq b_{2} \leq … \leq b_{n}$</li>
+  <li>Instance: &lt;7, 10, 4, 5, 2&gt;
+    <h3 id="insertion-sort-background">Insertion Sort-Background</h3>
+    <p>Consider the following observations:</p>
+  </li>
+  <li>A list with one element is sorted</li>
+  <li>In general, if we have a sorted list of <em>k</em> items we can insert a new item to create a sorted list of size $(k+1)$
+For example, consider this sorted array containing of eight sorted entries.</li>
+</ul>
+:ET
