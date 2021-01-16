@@ -10,8 +10,8 @@ permalink: /DS/
 - [Topics and Basic Concepts]({% link _posts/Data-Structure/Lecture1/2020-12-18-Summary02.md %})
 
 # Lecture2
-- []
-- []
+- [Array, List]({% link _posts/Data-Structure/2020-12-19-Summary01.md %})
+- [Stack, Queue]({% link _posts/Data-Structure/2020-12-19-Summary02.md %})
 
 # Lecture3
 - []
