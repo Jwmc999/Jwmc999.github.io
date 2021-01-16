@@ -3,17 +3,17 @@ language: ruby
 cache: bundler
 rvm: 2.6
 
-install: script/bootstrap
-script: script/cibuild
+install: bash script/bootstrap
+script: bash script/cibuild
 
 branches:
   only:
   - gh-pages     # test the gh-pages branch
   - /pages-(.*)/ # test every branch which starts with "pages-"
 
-#env:
-#  global:
-#  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
 addons:
   apt:
