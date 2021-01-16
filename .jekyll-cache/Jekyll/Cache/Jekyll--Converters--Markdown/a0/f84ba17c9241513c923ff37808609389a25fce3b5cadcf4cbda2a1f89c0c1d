@@ -1,5 +1,0 @@
-I"h<h1 id="pass-by-reference">Pass by Reference</h1>
-<p>You operate a mobile provider running a promotion that multiplies a user’s internet bandwidth.
-Fix the program by completing the function and calling it, so that the given megabyte outputs before and after the promotion work correctly.
-The multiplier is taken as input inside the multiplier function.</p>
-:ET

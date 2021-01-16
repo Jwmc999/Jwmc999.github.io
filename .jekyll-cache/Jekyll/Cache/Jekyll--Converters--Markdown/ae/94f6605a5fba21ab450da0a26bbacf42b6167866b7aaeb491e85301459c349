@@ -1,5 +1,0 @@
-I"R<h1 id="class-encapsulation">Class Encapsulation</h1>
-<p>You are a supercar engineer and currently setting the engine’s horsepower.
-Complete the given program by completing methods to set and get the horsepower of the car object in order to output it.
-The program should warn “Too much” if the inputted horsepower is above 800.</p>
-:ET
