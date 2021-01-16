@@ -1,6 +1,7 @@
 AllCops:
   Exclude:
     - _site/**/*
+    - script/validate-html
   NewCops: enable
 
 Layout/LineLength:
