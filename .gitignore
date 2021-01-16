@@ -8,4 +8,4 @@ assets
 .bundle
 vendor
 node_modules
-curl
+curl/
