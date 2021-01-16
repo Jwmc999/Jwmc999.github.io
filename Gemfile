@@ -28,7 +28,6 @@ install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
 end
 
 gem "jekyll-gist"
-gem "jekyll-include-cache"
 gem "jekyll-seo-tag"
 gem "jekyll-sitemap"
 # Performance-booster for watching directories on Windows

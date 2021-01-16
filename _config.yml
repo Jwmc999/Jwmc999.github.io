@@ -29,6 +29,7 @@ exclude             :
   - Gemfile.lock
   - node_modules
   - vendor
+  - .jekyll-cache
 keep_files          :
   - .git
   - .svn
@@ -46,13 +47,11 @@ unpublished         : false
 whitelist           :
   - jekyll-feed
   - jekyll-gist
-  - jekyll-include-cache
   - jekyll-seo-tag
   - jekyll-sitemap
 plugins             :
   - jekyll-feed
   - jekyll-gist
-  - jekyll-include-cache
   - jekyll-seo-tag
   - jekyll-sitemap
 
