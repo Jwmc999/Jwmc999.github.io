@@ -2,3 +2,10 @@ _site
 .sass-cache
 Gemfile.lock
 *.gem
+.jekyll-cache
+.jekyll-metadata
+assets
+.bundle
+vendor
+node_modules
+curl
