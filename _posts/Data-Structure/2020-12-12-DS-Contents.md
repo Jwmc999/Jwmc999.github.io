@@ -5,32 +5,64 @@ permalink: /DS/
 ---
 # Data Structure
 
-# Lecture1
+# Lecture 1
 - [Course Introduction]({% link _posts/Data-Structure/Lecture1/2020-12-18-Summary01.md %})
 - [Topics and Basic Concepts]({% link _posts/Data-Structure/Lecture1/2020-12-18-Summary02.md %})
 
-# Lecture2
+# Lecture 2
 - [Array, List]({% link _posts/Data-Structure/Lecture2/2020-12-19-Summary01.md %})
 - [Stack, Queue]({% link _posts/Data-Structure/Lecture2/2020-12-19-Summary02.md %})
 
-# Lecture3
+# Lecture 3
 - []
 - []
 
-# Lecture4
+# Lecture 4
 - []
 - []
 
-# Lecture5
+# Lecture 5
 - []
 - []
 
-# Lecture6
+# Lecture 6
 - []
 - []
+
+# Lecture 7
+
+
+
+# Lecture 9
+
+
+
+# Lecture 10
+
+
+
+# Lecture 11
+
+
+
+# Lecture 12
+
+
+
+# Lecture 13
+
+
+
+# Lecture 14
+
+
+
+# Lecture 15
+
+
 
 # Assignment
-- []
+- [Chess Knight]
 - []
 - []
 
