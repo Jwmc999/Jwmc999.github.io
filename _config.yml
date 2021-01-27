@@ -30,6 +30,7 @@ exclude             :
   - node_modules
   - vendor
   - .jekyll-cache
+
 keep_files          :
   - .git
   - .svn

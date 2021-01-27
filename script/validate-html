@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+#!usr/bin/env ruby
 # frozen_string_literal: true
 
 require 'w3c_validators'
@@ -7,7 +7,7 @@ def validator(file)
   extension = File.extname(file)
   case extension == '.html'
     W3CValidators::NuValidator.new
-  when extension == '.css'
+  elsif extension == '.css'
     W3CValidators::CSSValidator.new
   end
 end
