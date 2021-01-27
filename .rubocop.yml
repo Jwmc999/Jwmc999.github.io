@@ -39,6 +39,9 @@ Lint/NoReturnInBeginEndBlocks: # (new in 1.2)
 Lint/RedundantDirGlobSort: # (new in 1.8)
   Enabled: true
 
+Lint/ScriptPermission:
+  Enabled: False
+
 Lint/ToEnumArguments: # (new in 1.1)
   Enabled: true
 
