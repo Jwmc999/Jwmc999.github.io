@@ -7,8 +7,9 @@ script: chmod +x script/cibuild
 
 branches:
   only:
-  - main     # gh-pages # test the gh-pages branch
-  # - /pages-(.*)/ # test every branch which starts with "pages-"
+  - main     
+  - gh-pages # test the gh-pages branch
+  - /pages-(.*)/ # test every branch which starts with "pages-"
 
 cache:
   bundler: true # caching bundler gem packages will speed up build
