@@ -5,7 +5,7 @@ require 'w3c_validators'
 
 def validator(file)
   extension = File.extname(file)
-  case extension == '.html'
+  if extension == '.html'
     W3CValidators::NuValidator.new
   elsif extension == '.css'
     W3CValidators::CSSValidator.new

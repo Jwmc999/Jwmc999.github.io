@@ -51,6 +51,9 @@ Lint/UnmodifiedReduceAccumulator: # (new in 1.1)
 Style/ArgumentsForwarding: # (new in 1.1)
   Enabled: true
 
+Style/CaseLikeIf:
+  Enabled: false
+
 Style/CollectionCompact: # (new in 1.2)
   Enabled: true
 
