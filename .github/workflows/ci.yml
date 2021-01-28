@@ -9,6 +9,6 @@ jobs:
         with:
           ruby-version: 2.7
       - name: build
-        run: chmod +x script/bootstrap
+        run: script/bootstrap
       - name: test
-        run: chmod +x script/cibuild
+        run: script/cibuild

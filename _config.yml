@@ -4,7 +4,7 @@ author: Mervyn
 description: "Blog on C S"
 show_downloads: true
 google_analytics:
-remote_theme: pages/hacker
+remote_theme: pages-themes/hacker
 
 # Where things are
 source              : .
@@ -29,11 +29,7 @@ exclude             :
   - Gemfile.lock
   - node_modules
   - .jekyll-cache
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  
+  - vendor
 
 keep_files          :
   - .git
@@ -52,11 +48,13 @@ unpublished         : false
 whitelist           :
   - jekyll-feed
   - jekyll-gist
+  - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
 plugins             :
   - jekyll-feed
   - jekyll-gist
+  - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
 

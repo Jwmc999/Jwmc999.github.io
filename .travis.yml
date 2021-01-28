@@ -2,8 +2,8 @@ language: ruby
 rvm:
   - 2.6.3
 
-install: chmod +x script/bootstrap
-script: chmod +x script/cibuild
+install: script/bootstrap
+script: script/cibuild
 
 branches:
   only:
