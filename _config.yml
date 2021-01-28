@@ -82,7 +82,7 @@ verbose             : false
 defaults            :
   # _posts
   - scope:
-      path: ""
+      path: ""      
       type: posts
     values:
       layout: post
@@ -94,14 +94,14 @@ liquid:
 
 # Markdown Processors
 kramdown:
-  auto_ids          : true
-  entity_output     : as_char
-  toc_levels        : [1, 2, 3, 4, 5, 6]
-  smart_quotes      : lsquo,rsquo,ldquo,rdquo
+  # auto_ids          : true
+  # entity_output     : as_char
+  # toc_levels        : [1, 2, 3, 4, 5, 6]
+  # smart_quotes      : lsquo,rsquo,ldquo,rdquo
   input             : GFM
-  hard_wrap         : false
-  show_warnings     : false
-  footnote_nr       : 1
+  # shard_wrap        : false
+  # show_warnings     : false
+  # footnote_nr       : 1
   syntax_highlighter: rouge
-  math_engine:  mathjax
-  math_engine_opts: {}
+  # math_engine:  mathjax
+  # math_engine_opts: {}
