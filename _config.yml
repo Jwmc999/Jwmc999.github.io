@@ -58,14 +58,8 @@ plugins             :
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Conversion
-markdown            : kramdown
-highlighter         : rouge
-lsi                 : false
-excerpt_separator   : "\n\n"
-incremental         : false
-
 # Serving
+url: https://jwmc999.github.io
 detach              : false
 port                : 4000
 host                : 127.0.0.1
@@ -94,14 +88,7 @@ liquid:
 
 # Markdown Processors
 kramdown:
-  # auto_ids          : true
-  # entity_output     : as_char
-  # toc_levels        : [1, 2, 3, 4, 5, 6]
-  # smart_quotes      : lsquo,rsquo,ldquo,rdquo
   input             : GFM
-  # shard_wrap        : false
-  # show_warnings     : false
-  # footnote_nr       : 1
   syntax_highlighter: rouge
-  # math_engine:  mathjax
-  # math_engine_opts: {}
+  syntax_highlighter_opts:
+       css_class: 'highlight'
