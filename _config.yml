@@ -90,5 +90,12 @@ liquid:
 kramdown:
   input             : GFM
   syntax_highlighter: rouge
+<<<<<<< HEAD
   syntax_highlighter_opts:
        css_class: 'highlight'
+=======
+  # math_engine:  mathjax
+  # math_engine_opts: {}
+
+theme: jekyll-theme-cayman
+>>>>>>> 59cff9b8cdbbe2c087850d134175ea9e8c69f94e
