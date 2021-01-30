@@ -58,6 +58,8 @@ plugins             :
   - jekyll-seo-tag
   - jekyll-sitemap
 
+version: v1.2.0
+
 # Conversion
 markdown            : kramdown
 highlighter         : rouge
@@ -103,7 +105,5 @@ kramdown:
   # show_warnings     : false
   # footnote_nr       : 1
   syntax_highlighter: rouge
-  # math_engine:  mathjax
-  # math_engine_opts: {}
-
-theme: jekyll-theme-cayman
+  math_engine:  mathjax
+  math_engine_opts: {}
