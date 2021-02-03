@@ -54,27 +54,14 @@ permalink: /DS/
 - [Single-Source Shortest Path]({% link _posts/Data-Structure/Lecture13/2021-01-20-Summary02.md %})
 
 # Lecture 14
-- []()
-- []
+- [Topological Sort]({% link _posts/Data-Structure/Lecture14/2021-01-22-Summary01.md %})
+- [Critical Paths]({% link _posts/Data-Structure/Lecture14/2021-01-22-Summary02.md %})
 
 # Lecture 15
-- []
-- []
-
-# Assignment
-- [Chess Knight]
-- []
-- []
-
-
-
-
-
-
-
-
-
+- [Dynamic Programming]({% link _posts/Data-Structure/Lecture15/2021-01-24-Summary01.md %})
+- [Matrix Chain Multiplication]({% link _posts/Data-Structure/Lecture15/2021-01-24-Summary02.md %})
 
 
 [back]({% link post.md %})
-[next]({% link index.md %})
+[next]({% link _posts/Data-Structure/Lecture1/2020-12-18-Summary01.md
+ %})
