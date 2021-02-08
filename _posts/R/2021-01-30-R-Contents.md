@@ -21,6 +21,14 @@ This is a summary of KMOOC course "R 데이터 분석 입문: R Data Analysis In
 [Class 3_04]({% link _posts/R/Lecture3/2021-01-31-Summary04.md %})
 [Class 3_05]({% link _posts/R/Lecture3/2021-01-31-Summary05.md %})
 
+# Lecture 4
+[Class 4]({% link _posts/R/Lecture4/2021-02-02-Summary.md %})
+
+# Lecture 5
+[Class 5]({% link _posts/R/Lecture5/2021-02-05-Summary.md %})
+
+# Lecture 6
+[Class 6]({% link _posts/R/Lecture6/2021-02-08-Summary.md %})
 
 
 
