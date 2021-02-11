@@ -24,7 +24,7 @@ footer-links:
   flickr:
   github: Jwmc999
   instagram:
-  linkedin:
+  linkedin: 
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: jekyllrb
@@ -35,7 +35,7 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus: http-jwmc999-github-io
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
@@ -92,3 +92,19 @@ exclude:
   - .bundle
   - vendor
   - another-page.md
+
+
+defaults:
+ -
+   scope:
+     path: '_posts'
+     type: posts
+   values:
+     layout: post
+     author: mervyn
+     comments: true
+     read_time: true
+     share: true
+     related: true
+     toc_ads: false
+      
