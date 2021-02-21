@@ -13,7 +13,7 @@ layout: default
   <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
 {% endif %}
 
-{% if page.comments_id %}
+{% if page.comments %}
     {% include comments.html issue_id=page.comments_id %}
 {% endif %}
 </body>

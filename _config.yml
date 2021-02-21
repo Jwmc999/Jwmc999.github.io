@@ -102,7 +102,6 @@ defaults:
    values:
      layout: post
      author: mervyn
-     comments_id: 35
      comments: true
      read_time: true
      share: true

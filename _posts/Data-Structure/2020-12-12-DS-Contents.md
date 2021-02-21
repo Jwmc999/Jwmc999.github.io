@@ -2,6 +2,7 @@
 layout: post
 tags: Data_Structure
 permalink: /DS/
+comments_id: 1
 ---
 # Data Structure
 
