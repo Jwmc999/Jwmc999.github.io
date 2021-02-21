@@ -1,0 +1,27 @@
+---
+layout: post
+title: "Algorithm Competency"
+permalink: /Data/Psudo/
+---
+Private Humanities keeps working on career change to Computer Scientist, and become a software developer in ther future. 
+Many knows importance of Data Structure in software developing, so the private aims to solve following problems on her own. 
+Her answer might be wrong, so don't just follow her code; Try it Yourself!!
+
+## Chess Knight
+![Chess](/assets/chess.png)
+
+Chess Knight can move to 8 directions. Square chessboard width N, starting point (si, sj), and taget point (di, dj) are given.
+
+Output minimum step counts of Knight (0 <= si, sj, di, dj < N)
+
+Sample Input: 8 3 2 5 6
+Sample Output: 2
+
+## Chessboard problem Algorithm
+1. Shortest path --> BFS
+2. Create queue, set the starting cell
+3. loop till queue is empty. 
+- queue would be one of 8 possible movements
+- check if current node equal to destination
+- In BFS, its shortest path = shortest path of parent + 1
+3. Count minimum steps = shortest path length 
