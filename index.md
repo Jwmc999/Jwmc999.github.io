@@ -8,7 +8,9 @@ layout: default
 ## About
 Welcome to _Data Journey_, a log about adventure to be a successful computer programmer.
 Explore essential courses for a programmer, while searching various careers for C S major graduates.
-(*Since I am a newbie, I referenced and quoted codes from Jekyll Hacker theme.)
+
+As I think a skillful programmer avoids leaning on fancy commercial effects, I only referenced open source codes for this website. 
+This is a simple, ads-free, privacy-respectful website.  
 
 ## [Posts]({% link post.md %})
 
