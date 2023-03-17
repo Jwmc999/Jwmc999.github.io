@@ -13,6 +13,6 @@ I sometimes referenced other people's answers.
 * [Binary Search](./Binary)
 * [Data Structure](./DS)
 * [Shortest Path - DFS/BFS](./DFS&BFS)
-* [Minimum Spanning Tree](./MTS)
+* [Minimum Spanning Tree](./MST)
 * [Topology Sort](./Topology)
 * [Two Pointer](./TwoPointer)
