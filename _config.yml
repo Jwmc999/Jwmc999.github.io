@@ -6,7 +6,7 @@
 title: Data Journey
 
 # Short bio or description (displayed in the header)
-description: To become an AI Engineer
+description: International Studies Grad. racing for AI Engineer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -91,7 +91,6 @@ exclude:
   - .jekyll-cache
   - .bundle
   - vendor
-  - another-page.md
 
 
 defaults:
