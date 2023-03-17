@@ -1,7 +1,7 @@
 Here is the list of BaekJoon and Programmers practices. 
 I sometimes referenced other people's answers.
 
-## [List]
+## List
 * [Sorting](./_posts/Coding Test/Sort)
 * [Brute Force](./_posts/Coding Test/BruteForce)
 * [Set and Map](./_posts/Coding Test/Set&Map)
