@@ -12,4 +12,4 @@ Explore essential courses for an AI and Data Science, while also preparing caree
 Simple, ads-free, privacy-respectful website.  
 
 ## [Posts]({% link post.md %})
-To read my recent ML/DL and Data Science posts, go to _Independent Study_!
+To read my recent ML/DL and Data Science posts, go to [Independent Study]({% link _posts/Independent/2023-03-17-Intro.md %})!
